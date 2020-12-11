@@ -10,9 +10,6 @@ Klasse:** 4BHITM<br>
 <img src="prototype/sesame_home.png">
 <br>
 <!-- Table of Contents -->
-## Inhalt
-* Beschreibung
-* Technologien
 
 <!-- Description -->
 ## Beschreibung
