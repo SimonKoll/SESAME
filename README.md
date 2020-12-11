@@ -13,6 +13,14 @@
 ## Beschreibung
 Die Nachfrage für Türsysteme mit Überwachung wird immer größer. Die Sicherheit ist in Tagen wie diesen etwas, was für alle Menschen wichtig ist. Wir wollen einen Beitrag dazu leisten, die Sicherheit zu erhöhen. Um die Tür zu öffnen, müssen die Gesichtserkennung und der Fingerabdruck positiv sein. Bei einem Versagen der Hardware kann ein gewöhnlicher Schlüssel verwendet werden. Sobald sich jemand der Tür nähert, wird ein Livestream gestartet und eine Benachrichtigung an den Besitzer gesendet. Falls die Kamera das Gesicht nicht erkennt, wird ein Foto gemacht und in einer Galerie gespeichert, um nachvollziehen zu können, wer in den privaten Bereich eindringen wollte. 
 
+<br>
+
+## Statistiken
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SimonKoll&langs_count=8)](https://github.com/SimonKoll/SESAME)
+
+<br>
+
 ## Technologien
 * HTML
 * CSS
