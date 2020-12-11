@@ -11,8 +11,8 @@ Klasse:** 4BHITM<br>
 <br>
 <!-- Table of Contents -->
 ## Inhalt
-* [Beschreibung](#toc_2)
-* [Technologien](#toc_2)
+* Beschreibung
+* Technologien
 
 <!-- Description -->
 ## Beschreibung
