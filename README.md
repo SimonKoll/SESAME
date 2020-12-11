@@ -8,6 +8,7 @@ Klasse:** 4BHITM<br>
 <br>
 
 <img src="prototype/sesame_home.png">
+<br>
 <!-- Table of Contents -->
 ## Inhalt
 * [Beschreibung](#toc_2)
