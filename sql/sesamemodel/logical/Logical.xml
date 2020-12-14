@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="AD21BBED-0D3A-CB33-1F01-16A6D79D4091" mainViewID="CF5299F2-990F-15ED-766F-E39ED4017186">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 13:21:53 UTC</createdTime>
+<ownerDesignName>sesamemodel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

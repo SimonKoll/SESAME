@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="sesamemodel" id="4C9CA694-76F9-5806-2471-72E90E6F54E7" version="3.5">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 13:21:53 UTC</createdTime>
+<ownerDesignName>sesamemodel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4C9CA694-76F9-5806-2471-72E90E6F54E7</designId>
+</OSDM_Design>
