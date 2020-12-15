@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_16" directorySegmentName="seg_0" id="1335588F-66FD-2D2C-B306-423308263C05">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:24:04 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<sourcePk>1AE4BC5E-C9C0-9A80-48CA-7BBF3D3AD429</sourcePk>
+<targetPk>F290F243-45E9-AF09-C42B-56EB66A894B3</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2957AA09-071D-183C-A499-54BD9B720AB5</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>C6FB0C85-D682-BCFC-8380-31FD3A44156E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

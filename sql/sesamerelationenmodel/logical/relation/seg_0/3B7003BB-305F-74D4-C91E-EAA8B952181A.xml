@@ -1,20 +1,20 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_5" directorySegmentName="seg_0" id="CE7E673C-77C6-3ED3-EDF7-5DB2AA4FB966">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_13" directorySegmentName="seg_0" id="3B7003BB-305F-74D4-C91E-EAA8B952181A">
 <createdBy>patri</createdBy>
-<createdTime>2020-12-14 14:10:59 UTC</createdTime>
+<createdTime>2020-12-15 11:19:38 UTC</createdTime>
 <ownerDesignName>sesamerelationenmodel</ownerDesignName>
 <engineerTo>
 <item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
 </engineerTo>
-<sourcePk>E1AE8291-F33E-FA1D-41A0-200B3697AF3D</sourcePk>
-<targetPk>81FDDF3F-6FA2-8581-87B4-0361CD242836</targetPk>
+<sourcePk>F290F243-45E9-AF09-C42B-56EB66A894B3</sourcePk>
+<targetPk>E1AE8291-F33E-FA1D-41A0-200B3697AF3D</targetPk>
 <identifying>false</identifying>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>7E9E0825-C61A-2219-A01B-18FFCA1A1413</sourceEntity>
+<sourceEntity>C6FB0C85-D682-BCFC-8380-31FD3A44156E</sourceEntity>
 <targetCardinalityString>1</targetCardinalityString>
-<targetEntity>556FC57E-E5F1-F30F-1187-F55C0231F37E</targetEntity>
+<targetEntity>7E9E0825-C61A-2219-A01B-18FFCA1A1413</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

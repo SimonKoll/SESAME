@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B57EE56C-85B8-F44A-D847-579140589450" name="Person">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>C6FB0C85-D682-BCFC-8380-31FD3A44156E</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="07F305DE-FEF7-83A4-0133-E0AE899CDF35">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>63D5F167-D362-FB52-66CD-566FD6657EDF</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vorname" id="79EFCB79-DCC0-D2DC-25D2-692840655EC1">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>FE089286-03CF-B618-4688-7F1465FCFB25</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="6FAD0A09-13AC-8ACF-5B64-F1615CAD5275">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>957DA53F-B5F3-080E-C692-B7C82B6C61AB</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Besitzer_id" id="A2156914-82CA-D6D5-24AD-3168D6019F72">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>CE3AF2AD-DC91-5960-C5C6-6091CF6526E3</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD9BA55A-F194-C8BA-9A4B-6E5E87966D5E" referredColumn="114201C7-3095-D1B7-DC1D-97EEADEF4840"/>
+</associations>
+</Column>
+<Column name="Betreter_id" id="8B1F16FC-0D3B-3AA8-7C57-13815A44340B">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>D7F7FBA8-D34F-A225-916B-5A83F2F14D70</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DB0A832-131A-5C60-8FF1-28DDF3606F37" referredColumn="6F99A3DE-9098-413D-A778-10ACC0C588F8"/>
+</associations>
+</Column>
+<Column name="Face_id" id="F57B9142-0041-D2AF-7035-6359385C6D8C">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>08FFA5FA-CAB0-F706-4D5A-2B5427E9D434</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6095EB1D-F2C0-9A56-FBCC-554FBC4F7B14" referredColumn="64DBCABC-F4CA-3700-F4C3-AE806C8243E3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49AA723A-1389-47FC-FAA5-9C65B2BDD885" name="Person_PK">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>F290F243-45E9-AF09-C42B-56EB66A894B3</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07F305DE-FEF7-83A4-0133-E0AE899CDF35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="322D0650-60E7-08C9-EA15-CCB7B663F84E" name="Person__IDX">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>2945FE2D-0BB9-3F81-3B71-FCB5462DC824</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A2156914-82CA-D6D5-24AD-3168D6019F72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F2780FE-ACD1-B929-E2E7-6E13F05EC13A" name="Person__IDXv1">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3B7003BB-305F-74D4-C91E-EAA8B952181A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8B1F16FC-0D3B-3AA8-7C57-13815A44340B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54F53CAF-ADC4-49F8-32BE-D6703AB6518A" name="Person__IDXv2">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1335588F-66FD-2D2C-B306-423308263C05</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F57B9142-0041-D2AF-7035-6359385C6D8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E89CFBC6-95E8-FC52-D315-FF97754104FF" name="Person_Besitzer_FK">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>2945FE2D-0BB9-3F81-3B71-FCB5462DC824</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2156914-82CA-D6D5-24AD-3168D6019F72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="369D2982-30C5-6C87-F234-327E059B01B7" name="Person_Betreter_FK">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>3B7003BB-305F-74D4-C91E-EAA8B952181A</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B1F16FC-0D3B-3AA8-7C57-13815A44340B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C6E3DDB-1FCB-B01B-FDF6-1FFC5DBEBD5B" name="Person_Face_FK">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>1335588F-66FD-2D2C-B306-423308263C05</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F57B9142-0041-D2AF-7035-6359385C6D8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

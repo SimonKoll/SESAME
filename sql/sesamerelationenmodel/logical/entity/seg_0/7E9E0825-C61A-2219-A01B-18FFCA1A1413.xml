@@ -28,35 +28,6 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Vorname" id="52D373B0-9B02-98BE-F255-4C91AE00682C">
-<createdBy>patri</createdBy>
-<createdTime>2020-12-14 13:26:09 UTC</createdTime>
-<ownerDesignName>sesamerelationenmodel</ownerDesignName>
-<engineerTo>
-<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>32</dataTypeSize>
-<ownDataTypeParameters>32,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id1" id="EF0EE7A8-F0EB-3504-C756-14364C4EA32B">
-<createdBy>patri</createdBy>
-<createdTime>2020-12-14 14:11:02 UTC</createdTime>
-<generatorID>CE7E673C-77C6-3ED3-EDF7-5DB2AA4FB966</generatorID>
-<ownerDesignName>sesamerelationenmodel</ownerDesignName>
-<engineerTo>
-<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
-</engineerTo>
-<referedAttribute>B1918DE7-3793-28D5-8E36-ECB4D55ED43D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,4,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="id2" id="A48B290F-F3E3-6069-8B9B-A90614BA1471">
 <createdBy>patri</createdBy>
 <createdTime>2020-12-14 14:13:53 UTC</createdTime>
@@ -73,9 +44,24 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="email" id="B364DBD5-2662-1C34-1442-5C09CDFB8B48">
+<Attribute name="id1" id="29EAB744-5EB8-D4E1-C928-5AC2C3FFD8C8">
 <createdBy>patri</createdBy>
-<createdTime>2020-12-15 10:26:17 UTC</createdTime>
+<createdTime>2020-12-15 11:19:38 UTC</createdTime>
+<generatorID>3B7003BB-305F-74D4-C91E-EAA8B952181A</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<referedAttribute>63D5F167-D362-FB52-66CD-566FD6657EDF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nachname" id="3CFBAECF-8C94-9103-4A64-C2C8C01A6933">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:22:00 UTC</createdTime>
 <ownerDesignName>sesamerelationenmodel</ownerDesignName>
 <engineerTo>
 <item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
@@ -84,8 +70,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>64</dataTypeSize>
-<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

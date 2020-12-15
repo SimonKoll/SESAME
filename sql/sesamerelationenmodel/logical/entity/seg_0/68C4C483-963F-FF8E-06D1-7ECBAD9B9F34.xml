@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DDA5F5A2-0C4E-97C3-FCF1-01AD3B533EAB" name="fingerprintBetreter">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="68C4C483-963F-FF8E-06D1-7ECBAD9B9F34" name="EntranceHistory">
 <createdBy>patri</createdBy>
-<createdTime>2020-12-14 14:09:03 UTC</createdTime>
+<createdTime>2020-12-15 11:08:05 UTC</createdTime>
 <ownerDesignName>sesamerelationenmodel</ownerDesignName>
 <engineerTo>
 <item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="33FEF8A6-CEE9-A5D3-D0B7-014D36400377">
+<Attribute name="id" id="6D71B393-02A4-1F4F-30B0-BFC47616B7DC">
 <createdBy>patri</createdBy>
-<createdTime>2020-12-14 14:09:08 UTC</createdTime>
+<createdTime>2020-12-15 11:08:15 UTC</createdTime>
 <ownerDesignName>sesamerelationenmodel</ownerDesignName>
 <engineerTo>
 <item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
@@ -25,12 +25,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="path" id="E29D1A93-C42C-2EC4-4AD0-2E5000555269">
+<Attribute name="date" id="59379420-3F1A-630E-D165-9BE06BC0E2E4">
 <createdBy>patri</createdBy>
-<createdTime>2020-12-14 14:09:24 UTC</createdTime>
+<createdTime>2020-12-15 11:09:07 UTC</createdTime>
 <ownerDesignName>sesamerelationenmodel</ownerDesignName>
 <engineerTo>
 <item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
@@ -38,37 +38,36 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>64</dataTypeSize>
-<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="945EEB73-2437-CA7B-D8D1-A88D6B17AF31">
+<Attribute name="id1" id="1E28406F-DE2C-29B3-BF52-84CFCFF3A6AE">
 <createdBy>patri</createdBy>
-<createdTime>2020-12-15 10:28:45 UTC</createdTime>
-<generatorID>18A34714-F469-4B6B-414A-49B5AA85591E</generatorID>
+<createdTime>2020-12-15 11:23:29 UTC</createdTime>
+<generatorID>A4A56CDA-983E-10EF-4BBF-B8809FFF7A57</generatorID>
 <ownerDesignName>sesamerelationenmodel</ownerDesignName>
 <engineerTo>
 <item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
 </engineerTo>
-<referedAttribute>AAE02F2D-57D8-F81A-743B-5474CF95A25D</referedAttribute>
+<referedAttribute>63D5F167-D362-FB52-66CD-566FD6657EDF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
+<dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="7FA7733C-DA49-DC70-FC28-62D8DCFC4674" name="fingerprint PK">
+<identifier id="E58096BD-AA76-1E56-80D4-D051E915F99D" name="EntranceHistory PK">
 <createdBy>patri</createdBy>
-<createdTime>2020-12-14 14:09:22 UTC</createdTime>
+<createdTime>2020-12-15 11:08:32 UTC</createdTime>
 <ownerDesignName>sesamerelationenmodel</ownerDesignName>
 <engineerTo>
 <item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>33FEF8A6-CEE9-A5D3-D0B7-014D36400377</attributeRef>
+<attributeRef>6D71B393-02A4-1F4F-30B0-BFC47616B7DC</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

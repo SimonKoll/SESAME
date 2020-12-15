@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2957AA09-071D-183C-A499-54BD9B720AB5" name="FaceBesitzer">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2957AA09-071D-183C-A499-54BD9B720AB5" name="Face">
 <createdBy>patri</createdBy>
 <createdTime>2020-12-15 10:34:10 UTC</createdTime>
 <ownerDesignName>sesamerelationenmodel</ownerDesignName>
@@ -42,19 +42,19 @@
 <dataTypeSize>64</dataTypeSize>
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id3" id="43B2AB75-952F-68C8-F4EC-4D61ED994A79">
+<Attribute name="id1" id="678A2D96-5E20-611B-AF03-4000C00AF430">
 <createdBy>patri</createdBy>
-<createdTime>2020-12-15 10:34:38 UTC</createdTime>
-<generatorID>F6CC5651-2ED3-3E59-0AC9-676A6394BB31</generatorID>
+<createdTime>2020-12-15 11:24:09 UTC</createdTime>
+<generatorID>1335588F-66FD-2D2C-B306-423308263C05</generatorID>
 <ownerDesignName>sesamerelationenmodel</ownerDesignName>
 <engineerTo>
 <item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
 </engineerTo>
-<referedAttribute>B6F7A04D-8CD4-8DD5-A2A0-149BE5DAD259</referedAttribute>
+<referedAttribute>63D5F167-D362-FB52-66CD-566FD6657EDF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
+<dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
