@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="141E3D4D-828B-5F01-E065-F51C6F3A26B0" containerWithKeyObject="5F0B1698-97B8-4B73-E3C1-0693DA2E7F2A" localFKIndex="6591B542-BFED-887C-9E62-401990C096F4" name="Fingerprint_Person_FK">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>A4F6B2F1-BDFE-BC65-CE79-4BF8B7B136F2</generatorID>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<referredTableLongName>Person</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B57EE56C-85B8-F44A-D847-579140589450</referredTableID>
+<keyObject>49AA723A-1389-47FC-FAA5-9C65B2BDD885</keyObject>
+<referredKeyID>49AA723A-1389-47FC-FAA5-9C65B2BDD885</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

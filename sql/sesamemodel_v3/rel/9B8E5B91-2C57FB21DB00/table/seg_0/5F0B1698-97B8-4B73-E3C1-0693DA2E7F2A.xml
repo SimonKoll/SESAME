@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F0B1698-97B8-4B73-E3C1-0693DA2E7F2A" name="Fingerprint">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>33FB63BB-3BE0-F3EA-93A2-379CA0C49F08</generatorID>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="810440A1-E8EA-65B3-EF05-CCEEF2C50DAA">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>22013A6A-F9A9-84D9-F32E-CE6C4711D7C7</generatorID>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="path" id="1A2997E3-EA71-3E86-FC03-0B6495F1E4B6">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>4405C646-5898-A129-7C5A-09CE95FB20C8</generatorID>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_id" id="2EB66FAC-8DFB-E2AF-BA3C-DC5D313C27A6">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>9A784D85-8F04-08AE-064B-144B0BC4A6D2</generatorID>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="141E3D4D-828B-5F01-E065-F51C6F3A26B0" referredColumn="07F305DE-FEF7-83A4-0133-E0AE899CDF35"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6327EA59-51BF-4E08-694B-903739CC2B42" name="Fingerprint_PK">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>5B426E81-BD13-6179-E933-C5CEC83D2CB0</generatorID>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="810440A1-E8EA-65B3-EF05-CCEEF2C50DAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6591B542-BFED-887C-9E62-401990C096F4" name="Fingerprint_Person_FK">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:26:31 UTC</createdTime>
+<generatorID>A4F6B2F1-BDFE-BC65-CE79-4BF8B7B136F2</generatorID>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EB66FAC-8DFB-E2AF-BA3C-DC5D313C27A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

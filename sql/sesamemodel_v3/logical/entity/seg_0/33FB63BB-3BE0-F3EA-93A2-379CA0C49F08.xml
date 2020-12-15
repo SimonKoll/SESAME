@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="33FB63BB-3BE0-F3EA-93A2-379CA0C49F08" name="Fingerprint">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 10:30:11 UTC</createdTime>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="22013A6A-F9A9-84D9-F32E-CE6C4711D7C7">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 10:30:11 UTC</createdTime>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="path" id="4405C646-5898-A129-7C5A-09CE95FB20C8">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 10:30:11 UTC</createdTime>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="9A784D85-8F04-08AE-064B-144B0BC4A6D2">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 11:24:01 UTC</createdTime>
+<generatorID>A4F6B2F1-BDFE-BC65-CE79-4BF8B7B136F2</generatorID>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<referedAttribute>63D5F167-D362-FB52-66CD-566FD6657EDF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5B426E81-BD13-6179-E933-C5CEC83D2CB0" name="fingerprint PK">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 10:30:11 UTC</createdTime>
+<ownerDesignName>sesamemodel_v3</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>22013A6A-F9A9-84D9-F32E-CE6C4711D7C7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
