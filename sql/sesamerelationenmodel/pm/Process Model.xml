@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="473B2E17-ABCA-99A7-9307-D956BFCB8634">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 13:21:53 UTC</createdTime>
+<ownerDesignName>sesamemodel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

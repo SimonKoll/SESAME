@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="379631ED-60B4-E0E4-D206-70A0473AD918">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 13:21:53 UTC</createdTime>
+<ownerDesignName>sesamemodel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

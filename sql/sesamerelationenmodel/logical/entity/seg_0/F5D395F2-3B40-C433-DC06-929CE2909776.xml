@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F5D395F2-3B40-C433-DC06-929CE2909776" name="Besitzer">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 13:27:14 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="B6F7A04D-8CD4-8DD5-A2A0-149BE5DAD259">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 13:27:21 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Username" id="05502894-2CE1-83AE-6059-7F24754B7824">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 13:27:49 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Password" id="84511F90-252D-5B99-49FD-3EDD16DF2DF0">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 13:28:34 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="picturepath" id="DE543598-FA26-8964-8C85-6627CD21B273">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 14:18:39 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phonenumber" id="E68CA578-962C-FD25-3DF8-B0417A2DB43F">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 14:19:06 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="20B12260-49A0-4E49-06DF-950BEE911EEE">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 14:20:48 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="D04C88EB-2AC2-0591-B038-197E6E569C8E">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 10:34:42 UTC</createdTime>
+<generatorID>F6CC5651-2ED3-3E59-0AC9-676A6394BB31</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<referedAttribute>AF84655B-93D1-C479-4B8A-1BD7C8D0C799</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="169D9E86-382B-317F-F60A-CBDB7EEA6830" name="Besitzer PK">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-14 13:27:36 UTC</createdTime>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<engineerTo>
+<item key="9B8E5B91-5FA0-7DB4-57EC-2C57FB21DB00" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B6F7A04D-8CD4-8DD5-A2A0-149BE5DAD259</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

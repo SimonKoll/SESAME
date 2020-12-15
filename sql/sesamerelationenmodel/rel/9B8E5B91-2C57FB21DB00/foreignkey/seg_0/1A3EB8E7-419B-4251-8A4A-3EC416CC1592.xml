@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1A3EB8E7-419B-4251-8A4A-3EC416CC1592" containerWithKeyObject="3A3FB71D-C62F-634F-1FE1-61F74E78F3C0" localFKIndex="1EE1970A-8129-CE8E-B1FC-68FCD0C013B3" name="FaceBetreter_Betreter_FK">
+<createdBy>patri</createdBy>
+<createdTime>2020-12-15 10:35:12 UTC</createdTime>
+<generatorID>CE7E673C-77C6-3ED3-EDF7-5DB2AA4FB966</generatorID>
+<ownerDesignName>sesamerelationenmodel</ownerDesignName>
+<referredTableLongName>Betreter</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>892FEF9B-C9C1-171B-5043-36F8A77C7AA5</referredTableID>
+<keyObject>470463E9-BBC9-A496-6CE4-803CD409B23B</keyObject>
+<referredKeyID>470463E9-BBC9-A496-6CE4-803CD409B23B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
