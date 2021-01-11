@@ -1,0 +1,735 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1, .cls-10, .cls-18, .cls-5, .cls-8, .cls-9 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-Entry_History_-_DAVE);
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #edeeef;
+      }
+
+      .cls-5, .cls-9 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5, .cls-8, .cls-9 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-11, .cls-13, .cls-25, .cls-28, .cls-30, .cls-31, .cls-6 {
+        fill: #5dade2;
+      }
+
+      .cls-7 {
+        fill: #e2e2e2;
+      }
+
+      .cls-10, .cls-8 {
+        stroke: #5dade2;
+      }
+
+      .cls-8, .cls-9 {
+        stroke-linecap: round;
+      }
+
+      .cls-8 {
+        stroke-linejoin: round;
+      }
+
+      .cls-11 {
+        font-size: 19px;
+      }
+
+      .cls-11, .cls-22, .cls-25, .cls-27, .cls-28, .cls-30, .cls-31 {
+        font-family: BigJohn, Big John;
+      }
+
+      .cls-12, .cls-22, .cls-27 {
+        fill: #fff;
+      }
+
+      .cls-13, .cls-20, .cls-23 {
+        font-size: 30px;
+      }
+
+      .cls-13, .cls-26 {
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-14, .cls-16, .cls-17, .cls-19, .cls-20, .cls-23 {
+        font-family: SlimJoe, Slim Joe;
+      }
+
+      .cls-15 {
+        fill: rgba(93,173,226,0.25);
+      }
+
+      .cls-16, .cls-19, .cls-22 {
+        font-size: 29px;
+      }
+
+      .cls-17 {
+        font-size: 28px;
+      }
+
+      .cls-18, .cls-21 {
+        stroke: rgba(93,173,226,0.2);
+      }
+
+      .cls-19, .cls-23 {
+        fill: #aaa;
+      }
+
+      .cls-21 {
+        fill: rgba(93,173,226,0.85);
+      }
+
+      .cls-24 {
+        fill: url(#pattern);
+      }
+
+      .cls-25 {
+        font-size: 40px;
+      }
+
+      .cls-27, .cls-28 {
+        font-size: 20px;
+      }
+
+      .cls-29 {
+        fill: url(#pattern-2);
+      }
+
+      .cls-30 {
+        font-size: 35px;
+      }
+
+      .cls-31 {
+        font-size: 85px;
+      }
+
+      .cls-32 {
+        stroke: none;
+      }
+
+      .cls-33 {
+        filter: url(#Title);
+      }
+
+      .cls-34 {
+        filter: url(#Jane);
+      }
+
+      .cls-35 {
+        filter: url(#Ellipse_1);
+      }
+
+      .cls-36 {
+        filter: url(#Back);
+      }
+
+      .cls-37 {
+        filter: url(#Rechteck_15-2);
+      }
+
+      .cls-38 {
+        filter: url(#Home);
+      }
+
+      .cls-39 {
+        filter: url(#Rechteck_15);
+      }
+
+      .cls-40 {
+        filter: url(#Gallery);
+      }
+
+      .cls-41 {
+        filter: url(#Rechteck_16);
+      }
+
+      .cls-42 {
+        filter: url(#Live);
+      }
+
+      .cls-43 {
+        filter: url(#Rechteck_19-2);
+      }
+
+      .cls-44 {
+        filter: url(#Settings);
+      }
+
+      .cls-45 {
+        filter: url(#Rechteck_20);
+      }
+
+      .cls-46 {
+        filter: url(#Profile);
+      }
+
+      .cls-47 {
+        filter: url(#Rechteck_17);
+      }
+
+      .cls-48 {
+        filter: url(#Logout);
+      }
+
+      .cls-49 {
+        filter: url(#Rechteck_18);
+      }
+
+      .cls-50 {
+        filter: url(#Rechteck_77);
+      }
+
+      .cls-51 {
+        filter: url(#Remove_Data);
+      }
+
+      .cls-52 {
+        filter: url(#Rechteck_19);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_31" data-name="Rechteck 31" class="cls-1" width="350" height="279.957"/>
+    </clipPath>
+    <filter id="Rechteck_19" x="1184" y="962" width="416" height="108" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Remove_Data" x="1300" y="990" width="185" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 512 512">
+      <image width="512" height="512" xlink:href="Entry%20History%20-%20DAVE-image.jpg"/>
+    </pattern>
+    <filter id="Rechteck_77" x="729" y="200" width="91" height="91" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_18" x="46" y="755" width="259" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Logout" x="121" y="789" width="110" height="39" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_17" x="46" y="649" width="259" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Profile" x="122" y="683" width="108" height="39" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-7"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_20" x="46" y="543" width="259" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-8"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Settings" x="116" y="577" width="121" height="39" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-9"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_19-2" x="46" y="437" width="259" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-10"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Live" x="143" y="469" width="66" height="39" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-11"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_16" x="46" y="331" width="259" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-12"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-12"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Gallery" x="117" y="364" width="118" height="39" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-13"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-13"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_15" x="46" y="225" width="259" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-14"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-14"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Home" x="135" y="259" width="83" height="39" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-15"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-15"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_15-2" x="46" y="861" width="259" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-16"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-16"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Back" x="135" y="893" width="81" height="39" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-17"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-17"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <pattern id="pattern-2" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 400 561">
+      <image width="400" height="561" xlink:href="Entry%20History%20-%20DAVE-image2.jpg"/>
+    </pattern>
+    <filter id="Ellipse_1" x="1611.5" y="37.5" width="216" height="216" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-18"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-18"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Jane" x="1494" y="108" width="118" height="54" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-19"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-19"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Title" x="53.5" y="59.5" width="449" height="131" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-20"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-20"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Entry_History_-_DAVE">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Entry_History_-_DAVE" data-name="Entry History - DAVE" class="cls-2">
+    <rect class="cls-12" width="1920" height="1080"/>
+    <g id="Symbol" transform="translate(1570.449 800.134)">
+      <g id="Gruppe_1" data-name="Gruppe 1" class="cls-3">
+        <path id="Pfad_1" data-name="Pfad 1" class="cls-4" d="M477.892,104.251a65.587,65.587,0,1,1-65.587-65.587,65.587,65.587,0,0,1,65.587,65.587" transform="translate(-198.25 -22.108)"/>
+        <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-5" cx="65.587" cy="65.587" r="65.587" transform="translate(121.301 82.143) rotate(-45)"/>
+        <rect id="Rechteck_21" data-name="Rechteck 21" class="cls-4" width="47.685" height="164.287" transform="translate(190.213)"/>
+        <rect id="Rechteck_22" data-name="Rechteck 22" class="cls-4" width="47.685" height="164.287" transform="translate(130.996 61.719) rotate(-60)"/>
+        <rect id="Rechteck_23" data-name="Rechteck 23" class="cls-4" width="164.287" height="47.685" transform="matrix(0.866, -0.5, 0.5, 0.866, 130.996, 102.567)"/>
+        <path id="Pfad_2" data-name="Pfad 2" class="cls-6" d="M494.386,169.935a16.4,16.4,0,1,1-16.4-16.4,16.4,16.4,0,0,1,16.4,16.4" transform="translate(-263.934 -87.791)"/>
+        <path id="Pfad_3" data-name="Pfad 3" class="cls-5" d="M461.592,169.935a16.4,16.4,0,0,1,16.4-16.4" transform="translate(-263.934 -87.791)"/>
+        <path id="Pfad_4" data-name="Pfad 4" class="cls-7" d="M281.9,399.65c-5.652-59.09-40.745-146.519-40.745-146.519L210.474,234.2l3.391,47.272,4.572,45.122,38.8,87.276,35.454-11.135Z" transform="translate(-120.347 -133.912)"/>
+        <path id="Pfad_5" data-name="Pfad 5" class="cls-4" d="M197.912,248.4s6.915,112.872-12.617,166.312l4.08,5.994H154.636s-3.8-143.566-3.8-174.553Z" transform="translate(-86.249 -140.746)"/>
+        <path id="Pfad_6" data-name="Pfad 6" class="cls-4" d="M207.7,33.987V48.656l-18.172,4.466V28.368L207.7,23.9Z" transform="translate(-108.371 -13.667)"/>
+        <path id="Pfad_7" data-name="Pfad 7" d="M206.859,57.523a.486.486,0,1,0,.486-.486.486.486,0,0,0-.486.486" transform="translate(-118.28 -32.613)"/>
+        <path id="Pfad_8" data-name="Pfad 8" d="M224.287,57.523a.486.486,0,1,0,.486-.486.486.486,0,0,0-.486.486" transform="translate(-128.245 -32.613)"/>
+        <path id="Pfad_9" data-name="Pfad 9" class="cls-5" d="M220.308,54.942V47.455h3.752" transform="translate(-125.97 -27.134)"/>
+        <line id="Linie_1" data-name="Linie 1" class="cls-5" x2="3.752" transform="translate(88.15 20.32)"/>
+        <line id="Linie_2" data-name="Linie 2" class="cls-5" transform="translate(98.673 19.094)"/>
+        <path id="Pfad_10" data-name="Pfad 10" class="cls-4" d="M188.934,54.713v2.6a2.54,2.54,0,0,1-2.54-2.54c0-.078,0-.155.01-.231a1.27,1.27,0,0,1,2.529.17" transform="translate(-106.578 -30.556)"/>
+        <path id="Pfad_11" data-name="Pfad 11" class="cls-5" d="M188.934,59.1a2.54,2.54,0,0,1-2.54-2.54" transform="translate(-106.578 -32.338)"/>
+        <path id="Pfad_12" data-name="Pfad 12" class="cls-8" d="M213.045,65.819a2.571,2.571,0,0,1-2.571-2.571" transform="translate(-120.347 -36.165)"/>
+        <line id="Linie_3" data-name="Linie 3" class="cls-5" x1="18.172" y2="4.466" transform="translate(81.158 34.989)"/>
+        <line id="Linie_4" data-name="Linie 4" class="cls-9" x1="1.64" y2="0.403" transform="translate(92.698 27.814)"/>
+        <path id="Pfad_13" data-name="Pfad 13" class="cls-5" d="M211.049,32.585s-4.525,3.369-13.546,2.341c0,0,0,5.948-3.2,7.77" transform="translate(-111.102 -18.632)"/>
+        <path id="Pfad_14" data-name="Pfad 14" class="cls-5" d="M202.48,33.042s7.37-9.592-3.289-12.276-15.568,2.569-15.568,2.569-10.082,1.656.612,20.1" transform="translate(-102.533 -11.438)"/>
+        <path id="Pfad_15" data-name="Pfad 15" class="cls-6" d="M150.84,120.807v39.681L207.052,174.3V130.111a34.04,34.04,0,0,0-25.915-33.056,24.46,24.46,0,0,0-30.3,23.752" transform="translate(-86.249 -55.084)"/>
+        <path id="Pfad_16" data-name="Pfad 16" class="cls-5" d="M243.92,251.4s6.915,112.872-12.617,166.312" transform="translate(-132.257 -143.746)"/>
+        <path id="Pfad_17" data-name="Pfad 17" class="cls-5" d="M136.48,116.262s-30.626,40.632-18.039,64.6,73.31-12.1,73.995-18.5-13.6-2.969-13.6-2.969,1.721-11.648-5.587-.229L145.8,162.133l8.906-21.467" transform="translate(-65.988 -66.477)"/>
+        <path id="Pfad_18" data-name="Pfad 18" d="M189.381,206.569l-2.987,7.2,20.576-2.225a49.3,49.3,0,0,0-17.589-4.975" transform="translate(-106.578 -118.114)"/>
+        <path id="Pfad_19" data-name="Pfad 19" d="M151.237,266.418c.047,3.066.1,6.374.165,9.882,14.5-.119,33.357-7.961,41.868-16.359h0c.109-.107.212-.215.317-.322l.084-.086q.215-.221.419-.442l.074-.08q.206-.225.4-.45l.064-.073q.2-.229.383-.458l.053-.065c.126-.157.247-.313.366-.468l.041-.053c.119-.16.234-.319.346-.479l.03-.043q.169-.244.324-.488l.021-.033q.157-.249.3-.5l.013-.021q.145-.252.274-.5l.007-.014q.131-.256.246-.512l0,0a8.209,8.209,0,0,0,.733-2.72c-13.523,7.88-33.192,16.091-46.536,14.29" transform="translate(-86.476 -144.164)"/>
+        <path id="Pfad_20" data-name="Pfad 20" class="cls-5" d="M243.933,196.452l.453-1.385a9.494,9.494,0,0,1,7.45-6.412l18.86-3.171a6.831,6.831,0,0,1,7.344,3.894.335.335,0,0,0,.354.192l39.375-5.872.5-1.688a1.487,1.487,0,0,1,1.62-1.054L327.856,182a1.4,1.4,0,0,1,1.217,1.387v.96a1.4,1.4,0,0,1-.886,1.3l-6.718,2.645a2.23,2.23,0,0,1-2.559-.682l-.8-1-39.406,6.824a.333.333,0,0,0-.238.172l-.148.28a17.889,17.889,0,0,1-12.553,9.192l-3.623.667" transform="translate(-139.478 -103.461)"/>
+        <path id="Pfad_21" data-name="Pfad 21" class="cls-5" d="M239.2,104.626s16.083,6.834,39.72,40.367" transform="translate(-136.774 -59.824)"/>
+        <path id="Pfad_22" data-name="Pfad 22" class="cls-5" d="M282.114,222.629s27.34,9.592,34.876,2.512,9.821-26.245,9.821-26.245" transform="translate(-161.31 -113.727)"/>
+        <path id="Pfad_23" data-name="Pfad 23" class="cls-5" d="M352.423,148.407s1.655-16.462,1.485-21.258c0,0,2.83,1.542,5.355.685,0,0,1.667,2.741,2.867,2.569s.685-5.824-3.94-11.647-25.226-5.786-31.283,29.651" transform="translate(-186.921 -66.264)"/>
+        <path id="Pfad_24" data-name="Pfad 24" d="M121.311,483.65c-1.5-4.188-5.878,1.343-5.878,1.343s5.28-11.216,0-13.758c-2.6-1.255-3.975.221-4.695,2.039,2.7-16.308,3.284-47.762-7.619-48.857-11.91-1.2-7.835,29.018-7.835,29.018s-3.291-8.675-7.479-4.786,3.889,29.317,3.889,29.317c-.9-2.693-5.684-4.787-7.479,0S89.3,492.924,89.3,492.924l23.633,3.889s9.872-8.975,8.377-13.163" transform="translate(-47.983 -242.657)"/>
+        <path id="Pfad_25" data-name="Pfad 25" class="cls-6" d="M111.956,611.837H78.115L70.631,581.6h48.808Z" transform="translate(-40.386 -332.551)"/>
+        <line id="Linie_5" data-name="Linie 5" class="cls-5" x2="112.852" transform="translate(0 279.286)"/>
+        <line id="Linie_6" data-name="Linie 6" class="cls-5" x2="48.807" transform="translate(30.245 249.046)"/>
+        <path id="Pfad_26" data-name="Pfad 26" d="M640.355,510.732H516.2l47.6-105.957h76.552Z" transform="translate(-295.159 -231.446)"/>
+        <rect id="Rechteck_24" data-name="Rechteck 24" class="cls-4" width="80.969" height="15.137" transform="translate(169.688 264.149)"/>
+        <rect id="Rechteck_25" data-name="Rechteck 25" class="cls-4" width="80.969" height="15.137" transform="translate(183.208 249.013)"/>
+        <rect id="Rechteck_26" data-name="Rechteck 26" class="cls-4" width="80.969" height="15.137" transform="translate(196.727 233.876)"/>
+        <rect id="Rechteck_27" data-name="Rechteck 27" class="cls-4" width="80.969" height="15.137" transform="translate(210.247 218.739)"/>
+        <rect id="Rechteck_28" data-name="Rechteck 28" class="cls-4" width="80.969" height="15.137" transform="translate(223.767 203.602)"/>
+        <rect id="Rechteck_29" data-name="Rechteck 29" class="cls-4" width="80.969" height="15.137" transform="translate(237.287 188.465)"/>
+        <rect id="Rechteck_30" data-name="Rechteck 30" class="cls-4" width="80.969" height="15.137" transform="translate(250.806 173.328)"/>
+        <path id="Pfad_27" data-name="Pfad 27" class="cls-5" d="M396.273,616.867h80.969V632H396.273" transform="translate(-226.585 -352.718)"/>
+        <path id="Pfad_28" data-name="Pfad 28" class="cls-5" d="M427.845,581.519h80.969v15.137H427.845" transform="translate(-244.637 -332.506)"/>
+        <path id="Pfad_29" data-name="Pfad 29" class="cls-5" d="M459.418,546.17h80.969v15.137H459.418" transform="translate(-262.69 -312.294)"/>
+        <path id="Pfad_30" data-name="Pfad 30" class="cls-5" d="M490.991,510.822H571.96v15.137H490.991" transform="translate(-280.743 -292.082)"/>
+        <path id="Pfad_31" data-name="Pfad 31" class="cls-5" d="M522.563,475.472h80.969v15.137H522.563" transform="translate(-298.796 -271.87)"/>
+        <path id="Pfad_32" data-name="Pfad 32" class="cls-5" d="M554.136,440.123h80.969V455.26" transform="translate(-316.849 -251.658)"/>
+        <path id="Pfad_33" data-name="Pfad 33" class="cls-5" d="M585.709,404.775h80.969v15.137H585.709" transform="translate(-334.902 -231.446)"/>
+        <line id="Linie_7" data-name="Linie 7" class="cls-5" x2="185.116" transform="translate(164.884 279.286)"/>
+      </g>
+    </g>
+    <g id="Remove_Data_Button">
+      <g class="cls-52" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <g id="Rechteck_19-3" data-name="Rechteck 19" class="cls-10" transform="translate(1214 982)">
+          <rect class="cls-32" width="356" height="48"/>
+          <rect class="cls-1" x="0.5" y="0.5" width="355" height="47"/>
+        </g>
+      </g>
+      <g class="cls-51" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <text id="Remove_Data-2" data-name="Remove Data" class="cls-11" transform="translate(1309 1015)"><tspan x="0" y="0">Clear History</tspan></text>
+      </g>
+    </g>
+    <g id="Kalender" transform="translate(441.713 287.265)">
+      <rect id="Rechteck_78" data-name="Rechteck 78" class="cls-12" width="1037" height="74" transform="translate(0.287 -0.265)"/>
+      <text id="_November_2020_" data-name="&lt; November 2020 &gt;" class="cls-13" transform="translate(517.287 46.735)"><tspan x="-169.082" y="0">&lt;</tspan><tspan class="cls-14" y="0" xml:space="preserve"> November 2020 </tspan><tspan y="0">&gt;</tspan></text>
+      <path id="Pfad_108" data-name="Pfad 108" class="cls-1" d="M-4.4,0-17,12.6l12.6,12.6" transform="translate(84.794 24.821)"/>
+      <path id="Pfad_109" data-name="Pfad 109" class="cls-1" d="M0,0,12.6,12.6,0,25.191" transform="translate(956.897 24.821)"/>
+      <rect id="Rechteck_79" data-name="Rechteck 79" class="cls-15" width="148" height="74" transform="translate(0.287 73.735)"/>
+      <text id="Mon" class="cls-16" transform="translate(74.287 121.735)"><tspan x="-38.541" y="0">Mon</tspan></text>
+      <rect id="Rechteck_80" data-name="Rechteck 80" class="cls-15" width="148" height="74" transform="translate(148.287 73.735)"/>
+      <text id="Tue" class="cls-16" transform="translate(222.287 121.735)"><tspan x="-30.247" y="0">Tue</tspan></text>
+      <rect id="Rechteck_81" data-name="Rechteck 81" class="cls-15" width="148" height="74" transform="translate(296.287 73.735)"/>
+      <text id="Wed" class="cls-17" transform="translate(370.287 120.735)"><tspan x="-36.512" y="0">Wed</tspan></text>
+      <rect id="Rechteck_82" data-name="Rechteck 82" class="cls-15" width="148" height="74" transform="translate(444.287 73.735)"/>
+      <text id="Thu" class="cls-16" transform="translate(518.287 121.735)"><tspan x="-32.9" y="0">Thu</tspan></text>
+      <rect id="Rechteck_83" data-name="Rechteck 83" class="cls-15" width="149" height="74" transform="translate(592.287 73.735)"/>
+      <text id="Fri" class="cls-16" transform="translate(666.287 121.735)"><tspan x="-22.49" y="0">Fri</tspan></text>
+      <rect id="Rechteck_84" data-name="Rechteck 84" class="cls-15" width="148" height="74" transform="translate(741.287 73.735)"/>
+      <text id="Sat" class="cls-17" transform="translate(814.287 120.735)"><tspan x="-27.426" y="0">Sat</tspan></text>
+      <rect id="Rechteck_85" data-name="Rechteck 85" class="cls-15" width="148" height="74" transform="translate(889.287 73.735)"/>
+      <text id="Sun" class="cls-16" transform="translate(963.287 121.735)"><tspan x="-30.087" y="0">Sun</tspan></text>
+      <g id="Rechteck_86" data-name="Rechteck 86" class="cls-18" transform="translate(0.287 147.735)">
+        <rect class="cls-32" width="148" height="75"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="74"/>
+      </g>
+      <text id="_26" data-name="26" class="cls-19" transform="translate(74.287 194.735)"><tspan x="-16.936" y="0">26</tspan></text>
+      <g id="Rechteck_87" data-name="Rechteck 87" class="cls-18" transform="translate(148.287 147.735)">
+        <rect class="cls-32" width="148" height="75"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="74"/>
+      </g>
+      <text id="_27" data-name="27" class="cls-19" transform="translate(222.287 194.735)"><tspan x="-16.936" y="0">27</tspan></text>
+      <g id="Rechteck_88" data-name="Rechteck 88" class="cls-18" transform="translate(296.287 147.735)">
+        <rect class="cls-32" width="148" height="75"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="74"/>
+      </g>
+      <text id="_28" data-name="28" class="cls-19" transform="translate(370.287 194.735)"><tspan x="-16.936" y="0">28</tspan></text>
+      <g id="Rechteck_89" data-name="Rechteck 89" class="cls-18" transform="translate(444.287 147.735)">
+        <rect class="cls-32" width="148" height="75"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="74"/>
+      </g>
+      <text id="_29" data-name="29" class="cls-19" transform="translate(518.287 194.735)"><tspan x="-16.936" y="0">29</tspan></text>
+      <g id="Rechteck_90" data-name="Rechteck 90" class="cls-18" transform="translate(592.287 147.735)">
+        <rect class="cls-32" width="149" height="75"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="148" height="74"/>
+      </g>
+      <text id="_30" data-name="30" class="cls-19" transform="translate(666.287 194.735)"><tspan x="-16.936" y="0">30</tspan></text>
+      <g id="Rechteck_91" data-name="Rechteck 91" class="cls-18" transform="translate(741.287 147.735)">
+        <rect class="cls-32" width="148" height="75"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="74"/>
+      </g>
+      <text id="_31" data-name="31" class="cls-19" transform="translate(814.287 194.735)"><tspan x="-14.993" y="0">31</tspan></text>
+      <g id="Rechteck_92" data-name="Rechteck 92" class="cls-18" transform="translate(889.287 147.735)">
+        <rect class="cls-32" width="148" height="75"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="74"/>
+      </g>
+      <text id="_1" data-name="1" class="cls-20" transform="translate(963.287 195.735)"><tspan x="-6.75" y="0">1</tspan></text>
+      <g id="Rechteck_93" data-name="Rechteck 93" class="cls-18" transform="translate(0.287 222.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_2" data-name="2" class="cls-20" transform="translate(74.287 269.735)"><tspan x="-8.76" y="0">2</tspan></text>
+      <g id="Rechteck_94" data-name="Rechteck 94" class="cls-18" transform="translate(148.287 222.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_3" data-name="3" class="cls-20" transform="translate(222.287 269.735)"><tspan x="-8.76" y="0">3</tspan></text>
+      <g id="Rechteck_95" data-name="Rechteck 95" class="cls-18" transform="translate(296.287 222.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_4" data-name="4" class="cls-20" transform="translate(370.287 269.735)"><tspan x="-8.76" y="0">4</tspan></text>
+      <g id="Rechteck_96" data-name="Rechteck 96" class="cls-18" transform="translate(444.287 222.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_5" data-name="5" class="cls-20" transform="translate(518.287 269.735)"><tspan x="-8.76" y="0">5</tspan></text>
+      <g id="Rechteck_97" data-name="Rechteck 97" class="cls-18" transform="translate(592.287 222.735)">
+        <rect class="cls-32" width="149" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="148" height="73"/>
+      </g>
+      <text id="_6" data-name="6" class="cls-20" transform="translate(666.287 269.735)"><tspan x="-8.76" y="0">6</tspan></text>
+      <g id="Rechteck_98" data-name="Rechteck 98" class="cls-18" transform="translate(741.287 222.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_7" data-name="7" class="cls-20" transform="translate(815.287 269.735)"><tspan x="-8.76" y="0">7</tspan></text>
+      <g id="Rechteck_99" data-name="Rechteck 99" class="cls-18" transform="translate(889.287 222.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_8" data-name="8" class="cls-20" transform="translate(963.287 269.735)"><tspan x="-8.76" y="0">8</tspan></text>
+      <g id="Rechteck_100" data-name="Rechteck 100" class="cls-18" transform="translate(0.287 296.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_9" data-name="9" class="cls-20" transform="translate(74.287 343.735)"><tspan x="-8.76" y="0">9</tspan></text>
+      <g id="Rechteck_101" data-name="Rechteck 101" class="cls-18" transform="translate(148.287 296.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_10" data-name="10" class="cls-16" transform="translate(222.287 342.735)"><tspan x="-14.993" y="0">10</tspan></text>
+      <g id="Rechteck_102" data-name="Rechteck 102" class="cls-18" transform="translate(296.287 296.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_11" data-name="11" class="cls-16" transform="translate(370.287 342.735)"><tspan x="-13.05" y="0">11</tspan></text>
+      <g id="Rechteck_103" data-name="Rechteck 103" class="cls-18" transform="translate(444.287 296.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_12" data-name="12" class="cls-16" transform="translate(518.287 342.735)"><tspan x="-14.993" y="0">12</tspan></text>
+      <g id="Rechteck_104" data-name="Rechteck 104" class="cls-21" transform="translate(592.287 296.735)">
+        <rect class="cls-32" width="149" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="148" height="73"/>
+      </g>
+      <text id="_13" data-name="13" class="cls-22" transform="translate(666.287 342.735)"><tspan x="-16.965" y="0">13</tspan></text>
+      <g id="Rechteck_105" data-name="Rechteck 105" class="cls-18" transform="translate(741.287 296.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_14" data-name="14" class="cls-16" transform="translate(814.287 342.735)"><tspan x="-14.993" y="0">14</tspan></text>
+      <g id="Rechteck_106" data-name="Rechteck 106" class="cls-21" transform="translate(889.287 296.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_15" data-name="15" class="cls-22" transform="translate(963.287 342.735)"><tspan x="-16.965" y="0">15</tspan></text>
+      <g id="Rechteck_107" data-name="Rechteck 107" class="cls-18" transform="translate(0.287 370.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_16" data-name="16" class="cls-16" transform="translate(74.287 416.735)"><tspan x="-14.993" y="0">16</tspan></text>
+      <g id="Rechteck_108" data-name="Rechteck 108" class="cls-18" transform="translate(148.287 370.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_17" data-name="17" class="cls-16" transform="translate(222.287 416.735)"><tspan x="-14.993" y="0">17</tspan></text>
+      <g id="Rechteck_109" data-name="Rechteck 109" class="cls-18" transform="translate(296.287 370.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_18" data-name="18" class="cls-16" transform="translate(370.287 416.735)"><tspan x="-14.993" y="0">18</tspan></text>
+      <g id="Rechteck_110" data-name="Rechteck 110" class="cls-18" transform="translate(444.287 370.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_19" data-name="19" class="cls-16" transform="translate(518.287 416.735)"><tspan x="-14.993" y="0">19</tspan></text>
+      <g id="Rechteck_111" data-name="Rechteck 111" class="cls-18" transform="translate(592.287 370.735)">
+        <rect class="cls-32" width="149" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="148" height="73"/>
+      </g>
+      <text id="_20" data-name="20" class="cls-16" transform="translate(666.287 416.735)"><tspan x="-16.936" y="0">20</tspan></text>
+      <g id="Rechteck_112" data-name="Rechteck 112" class="cls-18" transform="translate(741.287 370.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_21" data-name="21" class="cls-16" transform="translate(814.287 416.735)"><tspan x="-14.993" y="0">21</tspan></text>
+      <g id="Rechteck_113" data-name="Rechteck 113" class="cls-18" transform="translate(889.287 370.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_22" data-name="22" class="cls-16" transform="translate(963.287 416.735)"><tspan x="-16.936" y="0">22</tspan></text>
+      <g id="Rechteck_114" data-name="Rechteck 114" class="cls-18" transform="translate(0.287 444.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_23" data-name="23" class="cls-16" transform="translate(74.287 491.735)"><tspan x="-16.936" y="0">23</tspan></text>
+      <g id="Rechteck_115" data-name="Rechteck 115" class="cls-18" transform="translate(148.287 444.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_24" data-name="24" class="cls-16" transform="translate(222.287 491.735)"><tspan x="-16.936" y="0">24</tspan></text>
+      <g id="Rechteck_116" data-name="Rechteck 116" class="cls-18" transform="translate(296.287 444.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_25" data-name="25" class="cls-16" transform="translate(370.287 491.735)"><tspan x="-16.936" y="0">25</tspan></text>
+      <g id="Rechteck_117" data-name="Rechteck 117" class="cls-18" transform="translate(444.287 444.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_26-2" data-name="26" class="cls-16" transform="translate(518.287 491.735)"><tspan x="-16.936" y="0">26</tspan></text>
+      <g id="Rechteck_118" data-name="Rechteck 118" class="cls-18" transform="translate(592.287 444.735)">
+        <rect class="cls-32" width="149" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="148" height="73"/>
+      </g>
+      <text id="_27-2" data-name="27" class="cls-16" transform="translate(666.287 491.735)"><tspan x="-16.936" y="0">27</tspan></text>
+      <g id="Rechteck_119" data-name="Rechteck 119" class="cls-18" transform="translate(741.287 444.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_28-2" data-name="28" class="cls-16" transform="translate(814.287 491.735)"><tspan x="-16.936" y="0">28</tspan></text>
+      <g id="Rechteck_120" data-name="Rechteck 120" class="cls-18" transform="translate(889.287 444.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_29-2" data-name="29" class="cls-16" transform="translate(963.287 491.735)"><tspan x="-16.936" y="0">29</tspan></text>
+      <g id="Rechteck_121" data-name="Rechteck 121" class="cls-18" transform="translate(0.287 518.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_30-2" data-name="30" class="cls-16" transform="translate(74.287 565.735)"><tspan x="-16.936" y="0">30</tspan></text>
+      <g id="Rechteck_122" data-name="Rechteck 122" class="cls-18" transform="translate(148.287 518.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_1-2" data-name="1" class="cls-23" transform="translate(222.287 566.735)"><tspan x="-6.75" y="0">1</tspan></text>
+      <g id="Rechteck_123" data-name="Rechteck 123" class="cls-18" transform="translate(296.287 518.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_2-2" data-name="2" class="cls-23" transform="translate(370.287 566.735)"><tspan x="-8.76" y="0">2</tspan></text>
+      <g id="Rechteck_124" data-name="Rechteck 124" class="cls-18" transform="translate(444.287 518.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_3-2" data-name="3" class="cls-23" transform="translate(518.287 566.735)"><tspan x="-8.76" y="0">3</tspan></text>
+      <g id="Rechteck_125" data-name="Rechteck 125" class="cls-18" transform="translate(592.287 518.735)">
+        <rect class="cls-32" width="149" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="148" height="73"/>
+      </g>
+      <text id="_4-2" data-name="4" class="cls-23" transform="translate(666.287 566.735)"><tspan x="-8.76" y="0">4</tspan></text>
+      <g id="Rechteck_126" data-name="Rechteck 126" class="cls-18" transform="translate(741.287 518.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_5-2" data-name="5" class="cls-23" transform="translate(815.287 566.735)"><tspan x="-8.76" y="0">5</tspan></text>
+      <g id="Rechteck_127" data-name="Rechteck 127" class="cls-18" transform="translate(889.287 518.735)">
+        <rect class="cls-32" width="148" height="74"/>
+        <rect class="cls-1" x="0.5" y="0.5" width="147" height="73"/>
+      </g>
+      <text id="_6-2" data-name="6" class="cls-23" transform="translate(963.287 566.735)"><tspan x="-8.76" y="0">6</tspan></text>
+    </g>
+    <g id="Dave_s_Entries" data-name="Dave&apos;s Entries" transform="translate(-51)">
+      <g class="cls-50" transform="matrix(1, 0, 0, 1, 51, 0)">
+        <rect id="Rechteck_77-2" data-name="Rechteck 77" class="cls-24" width="73" height="73" transform="translate(738 206)"/>
+      </g>
+      <text id="Dave_s_Entries-2" data-name="Dave`s Entries" class="cls-25" transform="translate(872 256)"><tspan x="0" y="0">Dave</tspan><tspan class="cls-26" y="0">`</tspan><tspan y="0">S Entries</tspan></text>
+    </g>
+    <g id="Navigation" transform="translate(0 -24)">
+      <g id="Logout_Button" transform="translate(0 105)">
+        <g class="cls-49" transform="matrix(1, 0, 0, 1, 0, -81)">
+          <rect id="Rechteck_18-2" data-name="Rechteck 18" class="cls-6" width="199" height="50" transform="translate(76 780)"/>
+        </g>
+        <g class="cls-48" transform="matrix(1, 0, 0, 1, 0, -81)">
+          <text id="Logout-2" data-name="Logout" class="cls-27" transform="translate(130 815)"><tspan x="0" y="0">Logout</tspan></text>
+        </g>
+      </g>
+      <g id="Profile_Button" transform="translate(0 -106)">
+        <g class="cls-47" transform="matrix(1, 0, 0, 1, 0, 130)">
+          <rect id="Rechteck_17-2" data-name="Rechteck 17" class="cls-6" width="199" height="50" transform="translate(76 674)"/>
+        </g>
+        <g class="cls-46" transform="matrix(1, 0, 0, 1, 0, 130)">
+          <text id="Profile-2" data-name="Profile" class="cls-27" transform="translate(131 709)"><tspan x="0" y="0">Profile</tspan></text>
+        </g>
+      </g>
+      <g id="Settings_Button">
+        <g class="cls-45" transform="matrix(1, 0, 0, 1, 0, 24)">
+          <g id="Rechteck_20-2" data-name="Rechteck 20" class="cls-10" transform="translate(76 568)">
+            <rect class="cls-32" width="199" height="50"/>
+            <rect class="cls-1" x="0.5" y="0.5" width="198" height="49"/>
+          </g>
+        </g>
+        <g class="cls-44" transform="matrix(1, 0, 0, 1, 0, 24)">
+          <text id="Settings-2" data-name="Settings" class="cls-28" transform="translate(125 603)"><tspan x="0" y="0">Settings</tspan></text>
+        </g>
+      </g>
+      <g id="Live_Button">
+        <g class="cls-43" transform="matrix(1, 0, 0, 1, 0, 24)">
+          <rect id="Rechteck_19-4" data-name="Rechteck 19" class="cls-6" width="199" height="50" transform="translate(76 462)"/>
+        </g>
+        <g class="cls-42" transform="matrix(1, 0, 0, 1, 0, 24)">
+          <text id="Live-2" data-name="Live" class="cls-27" transform="translate(152 495)"><tspan x="0" y="0">Live</tspan></text>
+        </g>
+      </g>
+      <g id="Gallery_Button">
+        <g class="cls-41" transform="matrix(1, 0, 0, 1, 0, 24)">
+          <rect id="Rechteck_16-2" data-name="Rechteck 16" class="cls-6" width="199" height="50" transform="translate(76 356)"/>
+        </g>
+        <g class="cls-40" transform="matrix(1, 0, 0, 1, 0, 24)">
+          <text id="Gallery-2" data-name="Gallery" class="cls-27" transform="translate(126 390)"><tspan x="0" y="0">Gallery</tspan></text>
+        </g>
+      </g>
+      <g id="Home_Button" data-name="Home Button" transform="translate(0 -7)">
+        <g class="cls-39" transform="matrix(1, 0, 0, 1, 0, 31)">
+          <rect id="Rechteck_15-3" data-name="Rechteck 15" class="cls-6" width="199" height="50" transform="translate(76 250)"/>
+        </g>
+        <g class="cls-38" transform="matrix(1, 0, 0, 1, 0, 31)">
+          <text id="Home-2" data-name="Home" class="cls-27" transform="translate(144 285)"><tspan x="0" y="0">Home</tspan></text>
+        </g>
+      </g>
+      <g id="Home_Button-2" data-name="Home Button" transform="translate(0 629)">
+        <g class="cls-37" transform="matrix(1, 0, 0, 1, 0, -605)">
+          <rect id="Rechteck_15-4" data-name="Rechteck 15" class="cls-6" width="199" height="50" transform="translate(76 886)"/>
+        </g>
+        <g class="cls-36" transform="matrix(1, 0, 0, 1, 0, -605)">
+          <text id="Back-2" data-name="Back" class="cls-27" transform="translate(144 919)"><tspan x="0" y="0">Back</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g id="Profile-3" data-name="Profile">
+      <g class="cls-35" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <circle id="Ellipse_1-2" data-name="Ellipse 1" class="cls-29" cx="85.5" cy="85.5" r="85.5" transform="translate(1634 55)"/>
+      </g>
+      <g class="cls-34" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <text id="Jane-2" data-name="Jane" class="cls-30" transform="translate(1503 149)"><tspan x="0" y="0">Jane</tspan></text>
+      </g>
+    </g>
+    <g class="cls-33" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <text id="Title-2" data-name="Title" class="cls-31" transform="translate(76 162)"><tspan x="0" y="0">History</tspan></text>
+    </g>
+  </g>
+</svg>
