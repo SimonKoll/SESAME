@@ -30,8 +30,6 @@ print("\n [INFO] Exiting Program and cleanup stuff")
 cam.release()
 cv2.destroyAllWindows()
 
- 
-
 import cv2
 import numpy as np
 from PIL import Image
@@ -61,8 +59,6 @@ recognizer.train(faces, np.array(ids))
 recognizer.write('trainer.yml') # recognizer.save() worked on Mac, but not on Pi
 # Print the numer of faces trained and end program
 print("\n [INFO] {0} faces trained. Exiting Program".format(len(np.unique(ids))))
-
- 
 
 import cv2
 import numpy as np
