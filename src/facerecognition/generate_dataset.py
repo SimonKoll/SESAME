@@ -4,7 +4,6 @@ import os.path
 import time
 from train_model import training
 from count_folders import countUsers
-#import train_model
 def gendata():
     print("enter username: ")
     totalUsers = countUsers()
