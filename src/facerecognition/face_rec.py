@@ -7,7 +7,10 @@ import time
 import cv2
 from gpiozero import Button, RGBLED
 from colorzero import Color
+import json
+from datetime import datetime
 
+json.load('entries.json')
 led = RGBLED(red=18, green=23, blue=24)
 button = Button(25)
 
@@ -53,13 +56,22 @@ while True:
 				name = data["names"][i]
 				counts[name] = counts.get(name, 0) + 1
 				led.color = Color(0,128,0)
+				
+
 
 			name = max(counts, key=counts.get)
 			
 			if currentname != name:
 				currentname = name
 				print(currentname)
-
+				dateTimeObj = datetime.now()
+				newEntrant = {"recognized-name": currentname, "time":dateTimeObj }
+				
+				with open("entries.json", "r+") as file:
+					data = json.load(file)
+					data.update(newEntrant)
+					file.seek(0)
+					json.dump(data, file)
 		names.append(name)
 
 	for ((top, right, bottom, left), name) in zip(boxes, names):
