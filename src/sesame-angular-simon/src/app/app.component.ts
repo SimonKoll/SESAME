@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CalendarOptions, DateSelectArg, EventClickArg, EventApi } from '@fullcalendar/angular';
 import { INITIAL_EVENTS, createEventId } from './event-utils';
+import entries from '../assets/entries.json';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,6 @@ import { INITIAL_EVENTS, createEventId } from './event-utils';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
   calendarVisible = true;
   calendarOptions: CalendarOptions = {
     headerToolbar: {
@@ -27,6 +27,7 @@ export class AppComponent {
   };
   currentEvents: EventApi[] = [];
 
+  entryList:{name:String, time:String}[]=entries["recognized-entries"];
   handleCalendarToggle() {
     this.calendarVisible = !this.calendarVisible;
   }

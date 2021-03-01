@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entry History</title>
 </head>
+
 <body>
-    <div class='entry-history'>
+    <!--  <div class='entry-history'>
         <div class='entry-history-main'>
           <full-calendar
             *ngIf='calendarVisible'
@@ -15,7 +17,18 @@
           ></full-calendar>
         </div>
       
-      </div>
-        
+      </div>-->
+    <div style="text-align:center">
+        <h2>
+            Entry list
+        </h2>
+        <ul *ngFor="let item of entryList">
+            <li>
+                <h3>Entrant :{{item.name}}, Time: {{item.time}}</h3>
+            </li>
+        </ul>
+    </div>
+
 </body>
+
 </html>
