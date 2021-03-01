@@ -2,7 +2,7 @@
 # SESAME
 **ITP - Projekt | 4BHITM 2020/2021**<br>
 **Projektleiter:** Koll Simon<br>
-**Team:** Danninger Julian, Golic Benjamin, Meisinger Sean-Patrick
+**Team:** Golic Benjamin, Meisinger Sean-Patrick
 <br>
 
 <img src="prototype/sesame_home.png">
