@@ -47,7 +47,8 @@ while True:
 		matches = face_recognition.compare_faces(data["encodings"],
 			encoding)
 		name = "Unknown" 
-		
+		led.color = Color(128,0,0)
+            
 		if True in matches:
 			matchedIdxs = [i for (i, b) in enumerate(matches) if b]
 			counts = {}
@@ -64,16 +65,8 @@ while True:
 			if currentname != name:
 				currentname = name
 				print(currentname)
-				dateTimeObj = datetime.now()
-				newEntrant = {"recognized-name": currentname, "time":dateTimeObj }
-				
-				with open("entries.json", "r+") as file:
-					data = json.load(file)
-					data.update(newEntrant)
-					file.seek(0)
-					json.dump(data, file)
 		names.append(name)
-
+       
 	for ((top, right, bottom, left), name) in zip(boxes, names):
 		cv2.rectangle(frame, (left, top), (right, bottom),
 			(0, 255, 0), 2)
