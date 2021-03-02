@@ -268,13 +268,13 @@ while True:
 			if currentname != name:
 				currentname = name
 				print(currentname)
-		names.append(name)
-		for i in range(5):
-			buzzer.on()
-			sleep(1)
-			buzzer.off()
-			sleep(1)
-		wJSON.writeEntriesToJson(currentname)
+				names.append(name)
+				for i in range(5):
+					buzzer.on()
+					sleep(1)
+					buzzer.off()
+					sleep(1)
+				wJSON.writeEntriesToJson(currentname)
 		#play(crazy_frog_melody, crazy_frog_tempo, 0.30, 0.900)
 		#os.system('python3 buzzer.py')
 
