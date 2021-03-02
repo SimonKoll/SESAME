@@ -9,6 +9,8 @@ from gpiozero import Button, RGBLED, Buzzer
 from colorzero import Color
 import json
 from datetime import datetime
+from datetime import date
+import writeJSON as wJSON		
 #import RPi.GPIO as GPIO
 #import time
 import os
@@ -250,6 +252,7 @@ while True:
 			encoding)
 		name = "Unknown" 
 		led.color = Color(128,0,0)
+		
             
 		if True in matches:
 			matchedIdxs = [i for (i, b) in enumerate(matches) if b]
@@ -271,6 +274,7 @@ while True:
 			sleep(1)
 			buzzer.off()
 			sleep(1)
+		wJSON.writeEntriesToJson(currentname)
 		#play(crazy_frog_melody, crazy_frog_tempo, 0.30, 0.900)
 		#os.system('python3 buzzer.py')
 
