@@ -269,7 +269,7 @@ while True:
 				currentname = name
 				print(currentname)
 				names.append(name)
-				for i in range(5):
+				for i in range(3):
 					buzzer.on()
 					sleep(1)
 					buzzer.off()
@@ -277,6 +277,7 @@ while True:
 				wJSON.writeEntriesToJson(currentname)
 		#play(crazy_frog_melody, crazy_frog_tempo, 0.30, 0.900)
 		#os.system('python3 buzzer.py')
+		names.append(name)
 
        
 	for ((top, right, bottom, left), name) in zip(boxes, names):
