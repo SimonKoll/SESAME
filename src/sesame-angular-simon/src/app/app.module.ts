@@ -13,12 +13,14 @@ import { EntrylistComponent } from './entrylist/entrylist.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { LiveComponent } from './live/live.component';
-import { SettingComponent } from './setting/setting.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import {RouterModule} from '@angular/router';
+import { RoutingModule } from './routing/routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 FullCalendarModule.registerPlugins([
   dayGridPlugin
@@ -34,7 +36,6 @@ FullCalendarModule.registerPlugins([
     HomeComponent,
     GalleryComponent,
     LiveComponent,
-    SettingComponent,
     SettingsComponent,
     ProfileComponent,
     LoginComponent,
@@ -43,7 +44,19 @@ FullCalendarModule.registerPlugins([
   ],
   imports: [
     BrowserModule,
-    FullCalendarModule // import the FullCalendar module! will make the FullCalendar component available
+    FullCalendarModule,
+    RouterModule.forRoot([
+      {path: "/", component: HomeComponent},
+      {path: "/settings", component: SettingsComponent},
+      {path: "/gallery", component: GalleryComponent},
+      {path: "/profile", component: ProfileComponent},
+      {path: "/live", component: LiveComponent},
+      {path: "/register", component: RegisterComponent},
+      {path: "/login", component: LoginComponent},
+      {path: "/forgot", component: ForgotPasswordComponent}
+    ]),
+    RoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

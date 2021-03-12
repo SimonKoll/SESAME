@@ -1,0 +1,11 @@
+.menu-button{
+    background-color: #5DADE2 ;
+    font-family: "Big John";
+    color: white;
+    text-align: center;
+    vertical-align: middle;line-height: 4.4vh; 
+    height: 5vh;
+    width: 30vw;
+    box-shadow: 3px 6px #e6e6e6;
+    cursor: pointer;
+}
