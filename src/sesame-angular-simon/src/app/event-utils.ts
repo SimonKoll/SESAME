@@ -1,4 +1,5 @@
 import { EventInput } from '@fullcalendar/angular';
+import entries from '../assets/entries.json';
 
 let eventGuid = 0;
 const TODAY_STR = new Date().toISOString().replace(/T.*$/, ''); // YYYY-MM-DD of today
