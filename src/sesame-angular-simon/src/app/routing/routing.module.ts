@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
-import {FullLayoutComponent} from '@angular/core'
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -16,8 +15,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
   ],
   exports: [
-    RouterModule,
-    FullLayoutComponent
+    RouterModule
   ],
   declarations: []
 })

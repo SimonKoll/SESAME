@@ -18,9 +18,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import {RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { RoutingModule } from './routing/routing.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdbModule } from 'mdb-angular-ui-kit';
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 
 FullCalendarModule.registerPlugins([
   dayGridPlugin
@@ -46,17 +49,20 @@ FullCalendarModule.registerPlugins([
     BrowserModule,
     FullCalendarModule,
     RouterModule.forRoot([
-      {path: "/", component: HomeComponent},
-      {path: "/settings", component: SettingsComponent},
-      {path: "/gallery", component: GalleryComponent},
-      {path: "/profile", component: ProfileComponent},
-      {path: "/live", component: LiveComponent},
-      {path: "/register", component: RegisterComponent},
-      {path: "/login", component: LoginComponent},
-      {path: "/forgot", component: ForgotPasswordComponent}
+      { path: "home", component: HomeComponent },
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
+      { path: "settings", component: SettingsComponent },
+      { path: "gallery", component: GalleryComponent },
+      { path: "profile", component: ProfileComponent },
+      { path: "live", component: LiveComponent },
+      { path: "register", component: RegisterComponent },
+      { path: "login", component: LoginComponent },
+      { path: "forgot", component: ForgotPasswordComponent }
     ]),
     RoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MdbModule,   
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
