@@ -57,7 +57,8 @@ FullCalendarModule.registerPlugins([
       { path: "live", component: LiveComponent },
       { path: "register", component: RegisterComponent },
       { path: "login", component: LoginComponent },
-      { path: "forgot", component: ForgotPasswordComponent }
+      { path: "forgot", component: ForgotPasswordComponent },
+      { path: "list", component: EntrylistComponent }
     ]),
     RoutingModule,
     BrowserAnimationsModule,

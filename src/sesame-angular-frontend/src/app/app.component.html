@@ -18,7 +18,7 @@
         </div>
       
       </div>-->
-   <!-- <div style="text-align:center">
+    <!-- <div style="text-align:center">
         <h2>
             Entry list
         </h2>
@@ -28,8 +28,18 @@
             </li>
         </ul>
     </div>-->
-   <app-menu></app-menu>
 
+    <div fxLayout="row" fxFlex="100">
+        <app-menu fxLayout="column" fxFlex="300px"></app-menu>
+        <div class="content" fxLayout="column" fxFlex>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <a routerLink="/profile" routerLinkActive=" active ">
+        <div class="profilepic ">
+            <img src="../../assets/pic/sample-profile-picture.png " width="50% " alt="profilepic " style="border-radius: 50%; float: right ">
+        </div>
+    </a>
 </body>
 
 </html>

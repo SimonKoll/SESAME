@@ -1,19 +1,30 @@
 @font-face {
     font-family: 'Big John';
-    src: url('fonts/big_john-webfont.woff2') format('woff2'),
-         url('fonts/big_john-webfont.woff') format('woff');
+    src: url('fonts/big_john-webfont.woff2') format('woff2'), url('fonts/big_john-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Slim Joe';
-    src: url('fonts/slim_joe-webfont.woff2') format('woff2'),
-         url('fonts/slim_joe-webfont.woff') format('woff');
+    src: url('fonts/slim_joe-webfont.woff2') format('woff2'), url('fonts/slim_joe-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-h1{
+h1 {
     font-family: "Big John";
+}
+
+.menu-component {
+    width: 11vw;
+}
+
+* {
+    padding: 5px;
+    margin: 5px;
+}
+
+a {
+    cursor: pointer;
 }
