@@ -1,11 +1,17 @@
 import RPi.GPIO as GPIO
+from gpiozero import RGBLED
+from colorzero import Color
 import time
 from generate_dataset import gendata
+import os
  
+led = RGBLED(red=17, green=27, blue=22)
 GPIO.setmode(GPIO.BCM)
+
+led.color = Color(128,128,128)
  
-GPIO_TRIGGER = 18
-GPIO_ECHO = 24
+GPIO_TRIGGER = 21
+GPIO_ECHO = 20
  
 GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
 GPIO.setup(GPIO_ECHO, GPIO.IN)
@@ -13,7 +19,7 @@ GPIO.setup(GPIO_ECHO, GPIO.IN)
 def distanz():
     GPIO.output(GPIO_TRIGGER, True)
  
-    time.sleep(0.00001)
+    time.sleep(0.0005)
     GPIO.output(GPIO_TRIGGER, False)
  
     StartZeit = time.time()
@@ -34,12 +40,20 @@ def distanz():
 if __name__ == '__main__':
     try:
         while True:
-            abstand = 49 
+            abstand = distanz() 
             print ("Gemessene Entfernung = %.1f cm" % abstand)
-            if abstand < 50:
-                print("Intruder alert")
-                gendata()
-            time.sleep(0.1)
+            if abstand < 100:
+                led.color = Color(128,128,128)
+                time.sleep(2)
+                
+                if abstand < 50:
+                    print("Intruder alert")
+                    led.color = Color(128,0,0)
+                    os.system('python3 face_rec.py')
+                    #gendata()
+                else:
+                    led.color = Color(128,128,128)
+                time.sleep(0.5)
  
     except KeyboardInterrupt:
         GPIO.cleanup()
