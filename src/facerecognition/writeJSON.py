@@ -5,11 +5,11 @@ from datetime import datetime
 
 now = datetime.now()
 
-def write_json(data, filename='../sesame-angular-simon/src/assets/entries.json'): 
+def write_json(data, filename='../sesame-angular-frontend/src/assets/entries.json'): 
 	with open(filename,'w') as f: 
 		json.dump(data, f, indent=4) 
 def writeEntriesToJson(currentname):
-    with open('../sesame-angular-simon/src/assets/entries.json') as json_file: 
+    with open('../sesame-angular-frontend/src/assets/entries.json') as json_file: 
         data = json.load(json_file)
             
         dt = now.strftime("%d/%m/%Y %H:%M:%S")
