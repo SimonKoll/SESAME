@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import dayGridPlugin from '@fullcalendar/daygrid';
@@ -49,23 +49,32 @@ FullCalendarModule.registerPlugins([
     BrowserModule,
     FullCalendarModule,
     RouterModule.forRoot([
-      { path: "home", component: HomeComponent },
-      { path: '', redirectTo: '/home', pathMatch: 'full' },
-      { path: "settings", component: SettingsComponent },
-      { path: "gallery", component: GalleryComponent },
-      { path: "profile", component: ProfileComponent },
-      { path: "live", component: LiveComponent },
-      { path: "register", component: RegisterComponent },
-      { path: "login", component: LoginComponent },
-      { path: "forgot", component: ForgotPasswordComponent },
-      { path: "list", component: EntrylistComponent }
+      { path: "home", component: HomeComponent , data:{title: 'Home'}},
+      { path: '', redirectTo: '/home', pathMatch: 'full' ,data:{title: 'Home'}},
+      { path: "settings", component: SettingsComponent ,data:{title: 'Settings'}},
+      { path: "gallery", component: GalleryComponent ,data:{title: 'Gallery'}},
+      { path: "profile", component: ProfileComponent,data:{title: 'Profile'} },
+      { path: "live", component: LiveComponent ,data:{title: 'Live'}},
+      { path: "register", component: RegisterComponent ,data:{title: 'Register'}},
+      { path: "login", component: LoginComponent,data:{title: 'Login'} },
+      { path: "forgot", component: ForgotPasswordComponent,data:{title: 'Forgot Password'} },
+      { path: "list", component: EntrylistComponent ,data:{title: 'EntryList'}}
     ]),
     RoutingModule,
     BrowserAnimationsModule,
     MdbModule,   
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  title = 'angulartitle';
+
+  constructor(private titleService: Title) {}
+
+  setDocTitle(title: string) {
+     console.log('current title:::::' + this.titleService.getTitle());
+     this.titleService.setTitle(title);
+  }
+ }
