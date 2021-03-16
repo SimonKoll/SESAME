@@ -19,8 +19,8 @@ from time import sleep
 buzzer = Buzzer(16)
 
 #json.load('entries.json')
-led = RGBLED(red=18, green=23, blue=24)
-button = Button(25)
+led = RGBLED(red=17, green=27, blue=22)
+#button = Button(25)
 
 #buzzer_pin = 16
 #
