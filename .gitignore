@@ -122,7 +122,3 @@ venv.bak/
 .dmypy.json
 dmypy.json
 node_modules
-
-# Entrylist - to prevent merge conflicts
-
-entries.json
