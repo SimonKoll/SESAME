@@ -19,7 +19,6 @@ __pycache__/
 
 # C extensions
 *.so
-
 # Distribution / packaging
 .Python
 build/
@@ -123,3 +122,7 @@ venv.bak/
 .dmypy.json
 dmypy.json
 node_modules
+
+# Entrylist - to prevent merge conflicts
+
+entries.json
