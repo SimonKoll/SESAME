@@ -10,7 +10,9 @@ from colorzero import Color
 import json
 from datetime import datetime
 from datetime import date
-import writeJSON as wJSON		
+import writeJSON as wJSON
+import snapshot1 as snaps
+import snapshot2 as snapv2
 import os
 from time import sleep
 import threading
@@ -18,6 +20,9 @@ import threading
 buzzer = Buzzer(16)
 
 led = RGBLED(red=17, green=27, blue=22)
+
+global thres
+thres = 0
 
 class myThread(threading.Thread):
     def __init__(self, id):
@@ -51,7 +56,7 @@ time.sleep(2.0)
 fps = FPS().start()
 while True:
 	frame = vs.read()
-	frame = imutils.resize(frame, width=800)
+	frame = imutils.resize(frame, width=600)
 	
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -68,9 +73,11 @@ while True:
 	for encoding in encodings:
 		matches = face_recognition.compare_faces(data["encodings"],
 			encoding)
-		name = "Unknown" 
+		name = "Unknown"
+		snapv2.takeSnap()
 		led.color = Color(128,0,0)
-		
+		thres += 1
+		print(thres)
             
 		if True in matches:
 			matchedIdxs = [i for (i, b) in enumerate(matches) if b]
@@ -90,6 +97,10 @@ while True:
 				t1.start()
 				wJSON.writeEntriesToJson(currentname)
 		names.append(name)
+		if thres > 10:
+			print("TAKE SCREENSHOT --- Thres")
+			print(thres)
+			thres = 0
 
        
 	for ((top, right, bottom, left), name) in zip(boxes, names):
@@ -99,7 +110,7 @@ while True:
 		cv2.putText(frame, name, (left, y), cv2.FONT_HERSHEY_SIMPLEX,
 			.8, (255, 0, 0), 2)
 
-	cv2.imshow("Facial Recognition is Running", frame)
+	cv2.imshow("faceRec", frame)
 	key = cv2.waitKey(1) & 0xFF
 
 	if key == ord("q"):
