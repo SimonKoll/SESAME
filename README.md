@@ -16,12 +16,10 @@ Die Nachfrage für Türsysteme mit Überwachung wird immer größer. Die Sicherh
 
 ## Technologien
 * HTML
+* Angular
 * CSS
-* Javascript
-* [NodeJS](nodejs.org/)
+* TailwindCSS
 * [Python](https://www.python.org)
 * [Docker](https://www.docker.com)
-* [MQTT](https://mqtt.org)
 * [OpenCV](https://opencv.org)
-* [Ionic](https://ionicframework.com)
 * [Keycloak](https://www.keycloak.org)

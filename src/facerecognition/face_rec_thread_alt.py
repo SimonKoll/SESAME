@@ -10,11 +10,10 @@ from colorzero import Color
 import json
 from datetime import datetime
 from datetime import date
-import writeJSON as wJSON		
+import writeJSON as wJSON
 import os
 from time import sleep
-import thread
-
+import _thread
 
 buzzer = Buzzer(16)
 
@@ -78,8 +77,7 @@ while True:
 				currentname = name
 				print(currentname)
 				names.append(name)
-                thread.start_new_thread( buzz, ("Thread-Buzz"))
-				
+				_thread.start_new_thread(buzz, ("Thread-Buzz",))
 				wJSON.writeEntriesToJson(currentname)
 		names.append(name)
 
@@ -105,3 +103,4 @@ print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
 
 cv2.destroyAllWindows()
 vs.stop()
+
