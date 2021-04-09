@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "678f2c23-e7a8-4bdb-97ad-8835d310d27d"
+    "analytics": "dc4d63c9-86e3-47e3-b801-ffa24174ae6f"
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -9,9 +9,6 @@
     "sesame-web": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        },
         "@schematics/angular:application": {
           "strict": true
         }
@@ -21,7 +18,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/sesame-web",
             "index": "src/index.html",
@@ -34,12 +31,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
-            "scripts": [],
-            "customWebpackConfig": {
-              "path": "webpack.config.js"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -72,7 +66,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "sesame-web:build"
           },
@@ -89,7 +83,7 @@
           }
         },
         "test": {
-          "builder": "@angular-builders/custom-webpack:karma",
+          "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
@@ -100,12 +94,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
-            "scripts": [],
-            "customWebpackConfig": {
-              "path": "webpack.config.js"
-            }
+            "scripts": []
           }
         },
         "lint": {
