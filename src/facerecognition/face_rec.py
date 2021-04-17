@@ -11,8 +11,10 @@ import json
 from datetime import datetime
 from datetime import date
 import writeJSON as wJSON
-import snapshot1 as snaps
-import snapshot2 as snapv2
+import snap as snap
+from stopStream import pressQToStop
+#import snapshot as takeSnaps
+#import snapshot1 as snaps
 import os
 from time import sleep
 import threading
@@ -74,7 +76,6 @@ while True:
 		matches = face_recognition.compare_faces(data["encodings"],
 			encoding)
 		name = "Unknown"
-		snapv2.takeSnap()
 		led.color = Color(128,0,0)
 		thres += 1
 		print(thres)
@@ -99,6 +100,8 @@ while True:
 		names.append(name)
 		if thres > 10:
 			print("TAKE SCREENSHOT --- Thres")
+			snap.takeScreen(vs)
+			pressQToStop()
 			print(thres)
 			thres = 0
 
