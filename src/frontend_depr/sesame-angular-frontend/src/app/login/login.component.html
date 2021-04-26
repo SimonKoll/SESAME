@@ -1,1 +1,87 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SESAME</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <section class="auth-box shadow" id="app">
+            <section class="login">
+                <section class="item-list">
+                    <section class="item shadow">
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </section>
+                </section>
+                <section class="body">
+                    <form action="" method="post">
+                        <label for="email">
+              <div class="w-100 text-left blue-color"><i class="far fa-envelope"></i></div>
+              <input type="text" name="email" placeholder="EMAIL...">
+            </label>
+                        <label for="password">
+              <div class="w-100 text-left blue-color"><i class="fas fa-lock"></i></div>
+              <input type="password" name="password" placeholder="********">
+            </label>
+                        <label class="d-flex flex-column">
+              <button id="signinL" type="submit" class="blue text-center">SIGN IN</button>
+              <br>
+              <a href="" class="forget-password">FORGOT PASSWORD?</a>
+            </label>
+                    </form>
+                </section>
+            </section>
+
+            <!------------------------ REGISTER - ------------------------>
+
+            <section class="register">
+                <section class="item-list">
+                    <section class="item shadow">
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </section>
+                </section>
+                <section class="body">
+                    <form method="post">
+                        <label for="name">
+              <div class="w-100 text-left blue-color"><i class="fas fa-user-alt"></i></div>
+              <input type="text" id="name" placeholder="First Name...">
+            </label>
+                        <label for="name">
+              <div class="w-100 text-left blue-color"><i class="fas fa-user-alt"></i></div>
+              <input type="text" id="name" placeholder="Last Name...">
+            </label>
+                        <label for="email">
+              <div class="w-100 text-left blue-color"><i class="far fa-envelope"></i></div>
+              <input type="email" id="email" placeholder="example@mail.com">
+            </label>
+                        <label for="password">
+              <div class="w-100 text-left blue-color"><i class="fas fa-lock"></i></div>
+              <input type="password" id="password" placeholder="********">
+            </label>
+                        <label class="d-flex flex-column">
+              <button id="signupR" type="submit" class="blue text-center">SIGN UP</button>
+            </label>
+                    </form>
+                </section>
+            </section>
+            <section class="box-color">
+                <h3 class="title">NEW TO SESAME?</h3>
+                <button type="button" class="register-btn blue text-center">SIGN UP</button>
+                <h3 class="title2">ALREADY ON BOARD?</h3>
+                <button type="button" class="login-btn blue text-center">SIGN IN</button>
+            </section>
+        </section>
+    </div>
+ 
+</body>
+
+</html>
