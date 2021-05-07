@@ -5,12 +5,12 @@ import { KeycloakGuard } from './keycloak.guard';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {path: '**', component: AppComponent, canActivate:[KeycloakGuard] },
-  {path: 'login', component:LoginComponent}
+  { path: 'login', component: LoginComponent }, //public Bereich
+  { path: 'home', component: AppComponent , canActivate: [KeycloakGuard] }, //restricted
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

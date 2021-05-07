@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  database:
+    container_name: pg_db_rpi
+    build: .
+    env_file: .env
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password@7979
+      - POSTGRES_DB=db
+    volumes:
+      - ./db_data:/var/lib/postgresql
+    ports:
+      - "5432:5432"
+    restart: always
+
+volumes:
+  db_data:

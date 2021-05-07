@@ -1,1 +1,1 @@
-$ docker run hello-world
+sudo mysql -u root -p
