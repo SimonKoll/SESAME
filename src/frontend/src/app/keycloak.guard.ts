@@ -1,22 +1,18 @@
 import { Injectable } from '@angular/core';
-import {
-  ActivatedRouteSnapshot,
-  Router,
-  RouterStateSnapshot,
-} from '@angular/router';
+import { ActivatedRouteSnapshot, Router, RouterStateSnapshot } from '@angular/router';
 import { KeycloakAuthGuard, KeycloakService } from 'keycloak-angular';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
-export class KeycloakGuard extends KeycloakAuthGuard {
+export class KeycloakGuard extends KeycloakAuthGuard  {
   constructor(
     protected readonly router: Router,
     protected readonly keycloak: KeycloakService
   ) {
     super(router, keycloak);
   }
-
+  
   public async isAccessAllowed(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
