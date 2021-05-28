@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from '../assets/entries.json';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @Component({
   selector: 'app-root',
