@@ -19,7 +19,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
       config: {
         url: 'http://localhost:8080/auth',
         realm: 'Sesame',
-        clientId: 'sesame-web-app',
+        clientId: 'sesame-tailwind',
       },
       initOptions: {
         onLoad: 'check-sso',

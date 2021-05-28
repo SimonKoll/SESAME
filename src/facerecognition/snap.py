@@ -1,7 +1,7 @@
 import cv2
 import os
 from datetime import datetime
-path = '/home/pi/Desktop/SESAME/SESAME/src/frontend_current/sesame-web/src/assets/snapshots'
+path = '/home/pi/Desktop/sesame/SESAME/src/frontend/src/assets/snapshots'
 now = datetime.now()
 
 def takeScreen(vs):
