@@ -1,6 +1,7 @@
 # Editors
 .vscode/
 .idea/
+**/node_module
 
 # Vagrant
 .vagrant/
