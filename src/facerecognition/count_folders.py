@@ -1,7 +1,7 @@
 import os
 
 def countUsers():
-    APP_FOLDER = '/home/pi/Desktop/facerecognition/dataset'
+    APP_FOLDER = '/home/pi/Desktop/sesame/SESAME/src/facerecognition/dataset'
     totalDir = 0
     for base, dirs, files in os.walk(APP_FOLDER):
         for directories in dirs:
