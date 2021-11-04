@@ -10,7 +10,8 @@ def loop():
         GPIO.output(25,False)
         time.sleep(1)
 setup()
-while True:
+try:
+    while True:
         loop()
 finally:
     GPIO.cleanup()
