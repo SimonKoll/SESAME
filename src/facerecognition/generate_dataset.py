@@ -1,14 +1,18 @@
-import cv2
 import os
 import os.path
 import time
-from train_model import training
+
+import cv2
+
 from count_folders import countUsers
+from train_model import training
+
+
 def gendata():
     print("enter username: ")
     totalUsers = countUsers()
-    newUser = totalUsers+1
-    name = "user"+str(newUser)
+    newUser = totalUsers + 1
+    name = "user" + str(newUser)
     face_dir = "/home/pi/Desktop/sesame/SESAME/src/facerecognition"
     parent_dir = "/home/pi/Desktop/sesame/SESAME/src/facerecognition/dataset"
 
@@ -29,7 +33,6 @@ def gendata():
             break
         cv2.imshow("Smile, you are on camera", frame)
 
-
         time.sleep(5)
         print("first picture in 5 seconds")
 
@@ -42,7 +45,6 @@ def gendata():
 
     cam.release()
 
-
     cv2.destroyAllWindows()
-    print('running python3 train_model.training '+name)
+    print('running python3 train_model.training ' + name)
     training(name)

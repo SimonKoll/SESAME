@@ -1,7 +1,8 @@
-from pynput.keyboard import Key, Controller
+from pynput.keyboard import Controller
+
 
 def pressQToStop():
     keyboard = Controller()
-    key="q"
+    key = "q"
     keyboard.press(key)
     keyboard.release(key)

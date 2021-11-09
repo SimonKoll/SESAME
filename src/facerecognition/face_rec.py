@@ -18,10 +18,15 @@ from stopStream import pressQToStop
 import os
 from time import sleep
 import threading
+import RPi.GPIO as GPIO
 
 buzzer = Buzzer(16)
 
-led = RGBLED(red=17, green=27, blue=22)
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(25, GPIO.OUT)  # green
+GPIO.setup(23, GPIO.OUT)  # red
+GPIO.setup(24, GPIO.OUT)  # yellow
 
 global thres
 thres = 0
@@ -30,10 +35,10 @@ class myThread(threading.Thread):
     def __init__(self, id):
         threading.Thread.__init__(self)
         self.id = id
-    
+
     def run(self):
         t1.buzz()
-    
+
     def buzz(self):
         for i in range(3):
             buzzer.on()
@@ -57,69 +62,77 @@ time.sleep(2.0)
 
 fps = FPS().start()
 while True:
-	frame = vs.read()
-	frame = imutils.resize(frame, width=600)
-	
-	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-	rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    GPIO.output(23, False)
+    GPIO.output(24, True)
+    GPIO.output(25, False)
+    frame = vs.read()
+    frame = imutils.resize(frame, width=600)
 
-	rects = detector.detectMultiScale(gray, scaleFactor=1.1, 
-		minNeighbors=5, minSize=(30, 30),
-		flags=cv2.CASCADE_SCALE_IMAGE)
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
-	boxes = [(y, x + w, y + h, x) for (x, y, w, h) in rects]
+    rects = detector.detectMultiScale(gray, scaleFactor=1.1,
+                                      minNeighbors=5, minSize=(30, 30),
+                                      flags=cv2.CASCADE_SCALE_IMAGE)
 
-	encodings = face_recognition.face_encodings(rgb, boxes)
-	names = []
+    boxes = [(y, x + w, y + h, x) for (x, y, w, h) in rects]
 
-	for encoding in encodings:
-		matches = face_recognition.compare_faces(data["encodings"],
-			encoding)
-		name = "Unknown"
-		led.color = Color(128,0,0)
-		thres += 1
-		print(thres)
-            
-		if True in matches:
-			matchedIdxs = [i for (i, b) in enumerate(matches) if b]
-			counts = {}
+    encodings = face_recognition.face_encodings(rgb, boxes)
+    names = []
 
-			for i in matchedIdxs:
-				name = data["names"][i]
-				counts[name] = counts.get(name, 0) + 1
-				led.color = Color(0,128,0)
+    for encoding in encodings:
+        matches = face_recognition.compare_faces(data["encodings"],
+                                                 encoding)
+        name = "Unknown"
+        GPIO.output(23, True)
+        GPIO.output(24, False)
+        GPIO.output(25, False)
+        thres += 1
+        print(thres)
 
-			name = max(counts, key=counts.get)
-			
-			if currentname != name:
-				currentname = name
-				print(currentname)
-				names.append(name)
-				t1.start()
-				wJSON.writeEntriesToJson(currentname)
-		names.append(name)
-		if thres > 10:
-			print("TAKE SCREENSHOT --- Thres")
-			snap.takeScreen(vs)
-			pressQToStop()
-			print(thres)
-			thres = 0
+        if True in matches:
+            matchedIdxs = [i for (i, b) in enumerate(matches) if b]
+            counts = {}
 
-       
-	for ((top, right, bottom, left), name) in zip(boxes, names):
-		cv2.rectangle(frame, (left, top), (right, bottom),
-			(0, 255, 0), 2)
-		y = top - 15 if top - 15 > 15 else top + 15
-		cv2.putText(frame, name, (left, y), cv2.FONT_HERSHEY_SIMPLEX,
-			.8, (255, 0, 0), 2)
+            for i in matchedIdxs:
+                name = data["names"][i]
+                counts[name] = counts.get(name, 0) + 1
+                led.color = Color(0,128,0)
 
-	cv2.imshow("faceRec", frame)
-	key = cv2.waitKey(1) & 0xFF
+            name = max(counts, key=counts.get)
 
-	if key == ord("q"):
-		break
+            if currentname != name:
+                currentname = name
+                print(currentname)
+                names.append(name)
+                t1.start()
+                wJSON.writeEntriesToJson(currentname)
+                GPIO.output(23, False)
+                GPIO.output(24, False)
+                GPIO.output(25, True)
+        names.append(name)
+        if thres > 10:
+            print("TAKE SCREENSHOT --- Thres")
+            snap.takeScreen(vs)
+            pressQToStop()
+            print(thres)
+            thres = 0
 
-	fps.update()
+
+    for ((top, right, bottom, left), name) in zip(boxes, names):
+        cv2.rectangle(frame, (left, top), (right, bottom),
+                      (0, 255, 0), 2)
+        y = top - 15 if top - 15 > 15 else top + 15
+        cv2.putText(frame, name, (left, y), cv2.FONT_HERSHEY_SIMPLEX,
+                    .8, (255, 0, 0), 2)
+
+    cv2.imshow("faceRec", frame)
+    key = cv2.waitKey(1) & 0xFF
+
+    if key == ord("q"):
+        break
+
+    fps.update()
 
 fps.stop()
 print("[INFO] elasped time: {:.2f}".format(fps.elapsed()))
@@ -127,4 +140,3 @@ print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
 
 cv2.destroyAllWindows()
 vs.stop()
-
