@@ -34,31 +34,35 @@ sidebar navigation
         .sidebar-item {
             width: $sidebar-width-full;
             .sidebar-link {
-                color: $sidebar-text;
+                color: #383838;
                 padding: $sidebar-link-padding;
                 display: flex;
                 white-space: nowrap;
                 align-items: center;
                 line-height: 25px;
-                opacity: 0.7;
+                opacity: 0.8;
+                background: transparent;
+                border-left: none;
                 i {
                     font-style: normal;
                     width: 35px;
                     line-height: 25px;
                     font-size: $sidebar-icon-size;
-                    color: $sidebar-icons;
+                    color: #383838;
                     display: inline-block;
                     text-align: center;
                 }
                 &.active,
                 &:hover {
                     opacity: 1;
+                    background: rgba(0, 0, 0, 0.1);
+                    border-left:4px solid #5DADE2 !important;
                 }
             }
             &.selected>.sidebar-link {
-                color: $white;
+                color: #333333;
                 i {
-                    color: $white;
+                    color: #333333;
                 }
             }
             
@@ -100,7 +104,7 @@ sidebar navigation
     }
     >#sidebarnav >.sidebar-item >.sidebar-link:hover, >#sidebarnav >.sidebar-item.selected >.sidebar-link{
         background: rgba(0, 0, 0, 0.1);
-        border-left:2px solid $info;
+        border-left:4px solid #5DADE2;
     }
     >#sidebarnav >.sidebar-item >.sidebar-link{
         border-left:2px solid transparent;
@@ -117,6 +121,9 @@ sidebar navigation
         padding: 0px;
         li {
             list-style: none;
+        }
+        li:hover{
+            cursor: pointer !important;
         }
     }
 }

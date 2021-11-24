@@ -1,0 +1,28 @@
+@media screen and (max-width: 1199.98px) {
+
+    #pT {
+        font-weight: 500;
+        font-size: 1.5em;
+        color: #383838;
+        vertical-align: middle;
+        line-height: 3em;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #pT {
+        font-weight: 500;
+        vertical-align: middle;
+        font-size: 1.15em;
+        height: 7.3394495412844vh;
+        line-height: 7.3394495412844vh;
+        text-align: center;
+        padding: 2%;
+        color: #383838;
+    }
+
+}
+

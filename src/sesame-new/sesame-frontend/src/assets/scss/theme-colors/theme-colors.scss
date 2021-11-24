@@ -4,7 +4,7 @@
         /*This is for the logo bg*/
         .topbar .top-navbar .navbar-header{
             &[data-logobg="skin5"]{
-                background: $skin5;
+                background: #FFFFFF;
             }
         }
         .topbar .navbar-collapse, .topbar{
@@ -15,7 +15,7 @@
         /*This is for the sidebar bg*/
         .left-sidebar{
             &[data-sidebarbg="skin5"], &[data-sidebarbg="skin5"] ul {
-                background: $skin5;
+                background: #FFFFFF;
             }
         }
     }

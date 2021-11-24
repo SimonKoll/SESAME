@@ -142,3 +142,10 @@ Topbar Responsive
         }
     }
 }
+
+@media screen and (min-width: 1400px) {
+    .top-navbar {
+        max-height: 64px !important;
+    }
+}
+

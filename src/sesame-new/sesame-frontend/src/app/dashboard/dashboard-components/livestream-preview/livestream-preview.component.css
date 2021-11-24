@@ -1,0 +1,58 @@
+@media screen and (max-width: 575.98px) { 
+    #PDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #lvPreview {
+        width: 80vw;
+        max-width: 80vw; 
+        min-width: 70vw; 
+        aspect-ratio:16/9;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991.98px) { 
+    #lvPreview {
+        width: 80vw;
+        max-width: 80vw; 
+        min-width: 70vw; 
+        aspect-ratio:16/9;
+    }
+ }
+
+@media screen and (min-width: 1200px) and (max-width:1399.98px) and (orientation: landscape) {
+    #previewDiv {
+        width: 35vw;
+        max-width: 35vw;
+        min-width: 10vw;
+        aspect-ratio:16/9;
+    }
+    
+    #lvPreview {
+        width: 30vw;
+        max-width: 30vw;
+        min-width: 10vw;
+        aspect-ratio: 16/9;
+    }
+
+    #PDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #lvPreview {
+        width: 35vw;
+        max-width: 35vw; 
+        min-width: 25vw; 
+        aspect-ratio:16/9;
+    }
+}
+
+#lvPreview {
+    max-width: 80vw;
+}

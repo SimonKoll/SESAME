@@ -1,0 +1,139 @@
+@media screen and (max-width: 575.98px) { 
+    #trafficLightsDiv {
+        width: 95vw;
+    }
+
+    #trafficLights{
+        display: flex;
+        align-items: center;
+        justify-content: center 
+    }
+
+    .trafficLight {
+        width: 20vw; 
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    #yellowLight, #greenLight {
+        margin-left: 5vw;
+    }
+}
+
+@media screen and (max-width: 575.98px) and (orientation: landscape) { 
+    #trafficLightsDiv {
+        width: 95vw;
+    }
+
+    #trafficLights{
+        display: flex;
+        align-items: center;
+        justify-content: center 
+    }
+
+    .trafficLight {
+        width: 20vw; 
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    #yellowLight, #greenLight {
+        margin-left: 5vw;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991.98px) { 
+    #trafficLights {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .trafficLight {
+        width: 15vw;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    #yellowLight, #greenLight {
+        margin-left: 5vw;
+    }
+ }
+
+ @media screen and (min-width: 576px) and (max-width: 991.98px) and (orientation: landscape) { 
+    #trafficLights {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trafficLight {
+        width: 12.5vw;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    #yellowLight, #greenLight {
+        margin-left: 5vw;
+    }
+ }
+
+ @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+    #trafficLights {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trafficLight {
+        width: 15vw;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    #yellowLight, #greenLight {
+        margin-left: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1399.98px) and (orientation: landscape) {
+    #trafficLights {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15vh;
+    }
+
+    .trafficLight {
+        width: 8vw;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    #yellowLight, #greenLight {
+        margin-left: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    #trafficLights {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15vh;
+        
+    }
+
+    .trafficLight {
+        width: 7vw;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    #yellowLight, #greenLight {
+        margin-left: 2.5vw;
+    }
+}

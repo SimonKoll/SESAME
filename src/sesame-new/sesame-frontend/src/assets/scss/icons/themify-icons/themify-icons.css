@@ -11,7 +11,6 @@
 
 [class^="ti-"], [class*=" ti-"] {
 	font-family: 'themify';
-	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -451,9 +450,11 @@
 }
 .ti-menu:before {
 	content: "\e68e";
+	color: #383838;
 }
 .ti-menu-alt:before {
 	content: "\e68f";
+	color: #383838;
 }
 .ti-map:before {
 	content: "\e690";
@@ -700,9 +701,11 @@
 }
 .ti-more:before {
 	content: "\e6e1";
+	color: #383838;
 }
 .ti-more-alt:before {
 	content: "\e6e2";
+	color: #383838;
 }
 .ti-microphone-alt:before {
 	content: "\e6e3";

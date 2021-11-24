@@ -10,8 +10,7 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    // path: '/component/accordion',
-    path: '',
+    path: '/component/entry',
     title: 'Entries',
     icon: 'mdi mdi-equal',
     class: '',
@@ -19,7 +18,7 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: '',
+    path: '/component/live',
     title: 'Live',
     icon: 'mdi mdi-message-bulleted',
     class: '',
@@ -27,7 +26,7 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: '',
+    path: '/component/accessmanagement',
     title: 'Access Management',
     icon: 'mdi mdi-view-carousel',
     class: '',

@@ -1,4 +1,35 @@
-#main-wrapper {
-  max-height: 100vh;
-  height: 100vh;
+@media screen and (max-width: 575.98px) { 
+  #sTitle {
+    font-weight: 400; 
+    color: #383838; 
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+
+  #real-content {        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+  }
+
+}
+@media screen and (min-width: 1200px) {
+  #main-wrapper {
+    max-height: 100vh;
+    height: 100vh;
+  }
+
+  #real-content {        
+    display: flex;
+    justify-content: center;
+  }
+
+  #sTitle {
+    font-weight: 400; 
+    color: #383838; 
+    margin-left: .5vw;
+    font-size: 1.1em;
+  }
 }

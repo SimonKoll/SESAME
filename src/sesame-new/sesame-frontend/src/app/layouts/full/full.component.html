@@ -6,7 +6,7 @@
                     <i [ngClass]="(showMobileMenu)?'ti-close':'ti-menu'"></i>
                 </a>
                 <a class="navbar-brand" href="/">
-                    <span class="logo-text" style="color: white; margin-left: 5%;">
+                    <span id="sTitle" class="logo-text">
                         Sesame
                     </span>
                 </a>
@@ -28,8 +28,7 @@
 
     </aside>
     <div class="page-wrapper">
-        <app-breadcrumb></app-breadcrumb>
-        <div class="container-fluid">
+        <div id="real-content" class="container-fluid">
             <router-outlet></router-outlet>
         </div>
     </div>

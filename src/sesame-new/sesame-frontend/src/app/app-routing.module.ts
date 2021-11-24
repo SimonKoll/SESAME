@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { FullComponent } from './layouts/full/full.component';
+import { ProfileComponent } from './component/profile/profile.component';
 
 export const Approutes: Routes = [
 	{
@@ -16,7 +17,8 @@ export const Approutes: Routes = [
 			{
 				path: 'component',
 				loadChildren: () => import('./component/component.module').then(m => m.ComponentsModule)
-			}
+			},
+			{ path: 'profile-component', data: { title: 'Profile' }, component: ProfileComponent },
 		]
 	},
 	{
