@@ -19,7 +19,7 @@
               "ng2-charts",
               "chart.js"
             ],
-            "outputPath": "dist/",
+            "outputPath": "dist/sesame-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
