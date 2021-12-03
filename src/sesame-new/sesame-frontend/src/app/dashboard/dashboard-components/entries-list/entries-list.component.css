@@ -12,6 +12,18 @@
         width: 50vw;
         
     }
+    #entrytable th, #entrytable td {
+        text-align: center;
+    }
+
+    .mat-cell, .mat-row {
+        text-align: center;
+    }
+    
+    th.mat-header-cell {
+        text-align: center;
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 1199.98px) {
@@ -19,12 +31,24 @@
     #entryTable {
         width: 80vw;
         max-width: 80vw; 
-        min-width: 25vw; 
+        min-width: 70vw; 
         aspect-ratio:16/9;
     }
 
     th, td {
         width: 40vw;
+    }
+    #entrytable th, #entrytable td {
+        text-align: center;
+    }
+
+    .mat-cell, .mat-row {
+        text-align: center;
+    }
+    
+    th.mat-header-cell {
+        text-align: center;
+        font-size: 1em;
     }
 }
 
@@ -49,6 +73,18 @@
     th, td {
         width: 15vw;
     }
+    #entrytable th, #entrytable td {
+        text-align: center;
+    }
+
+    .mat-cell, .mat-row {
+        text-align: center;
+    }
+    
+    th.mat-header-cell {
+        text-align: center;
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -62,6 +98,18 @@
 
     th, td {
         width: 15vw;
+    }
+    #entrytable th, #entrytable td {
+        text-align: center;
+    }
+
+    .mat-cell, .mat-row {
+        text-align: center;
+    }
+    
+    th.mat-header-cell {
+        text-align: center;
+        font-size: 1em;
     }
 }
 

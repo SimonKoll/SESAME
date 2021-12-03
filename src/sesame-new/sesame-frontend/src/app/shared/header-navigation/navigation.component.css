@@ -16,12 +16,13 @@
     #pT {
         font-weight: 500;
         vertical-align: middle;
-        font-size: 1.15em;
-        height: 7.3394495412844vh;
-        line-height: 7.3394495412844vh;
+        font-size: 1.2em;
         text-align: center;
         padding: 2%;
         color: #383838;
+
+        height: 7.3394495412844vh;
+        line-height: 7.3394495412844vh; 
     }
 
 }

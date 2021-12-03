@@ -1,3 +1,93 @@
-h1, h3 {
-    text-align: center;
+@media screen and (max-width: 575.98px) { 
+    #entryListTable {
+        width: 95vw;
+    }
+
+    #entryTable {
+        display: block; 
+        height: fit-content; 
+    }
+
+    th, td {
+        width: 50vw;
+        
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1199.98px) {
+
+    #entryTable {
+        width: 80vw;
+        max-width: 80vw; 
+        min-width: 25vw; 
+        aspect-ratio:16/9;
+    }
+
+    th, td {
+        width: 40vw;
+    }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width:1399.98px) and (orientation: landscape) {
+    #entryListTable {
+        width: 35vw;
+        max-width: 35vw;
+        min-width: 10vw;
+        aspect-ratio:16/9;
+    }
+    
+    #entryTable {
+        width: 30vw;
+        max-width: 30vw; 
+        min-width: 10vw; 
+        aspect-ratio: 16/9 !important;
+        height: auto;
+        overflow: scroll;
+    }
+
+    th, td {
+        width: 15vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    #TDiv {
+        max-height: 85vh !important;
+        height: fit-content;
+        overflow-y: scroll;
+    }
+
+    #entryTable {
+        width: 65vw;
+        max-width: 70vw; 
+        min-width: 60vw;
+        
+    }
+
+    th, td {
+        width: 15vw;
+    }
+    #entrytable th, #entrytable td {
+        height: 2vh;
+        text-align: center;
+    }
+
+    .mat-cell, .mat-row {
+        height: 15px;
+        text-align: center;
+    }
+    tr.mat-row {
+        height: 10vh;
+    }
+    th.mat-header-cell {
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
+
+#entryTable {
+    max-width: 80vw;
 }

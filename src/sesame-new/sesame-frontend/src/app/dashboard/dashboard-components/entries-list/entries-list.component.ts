@@ -12,7 +12,7 @@ import { MatTableModule } from '@angular/material/table';
 export class EntriesListComponent implements OnInit {
   displayedColumns: string[] = ['Name', 'Time'];
   entryList: {name: String; time: String }[] = entries['recognized-entries'];
-  entryDataSource = new MatTableDataSource(this.entryList);
+  entryDataSource = new MatTableDataSource(this.entryList.slice(0, 5));
   entrant: string | undefined;
   entryListEdited: { name: String; time: String; } | undefined;
 

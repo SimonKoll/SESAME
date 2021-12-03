@@ -8,10 +8,12 @@ import { EntryComponent } from './entry/entry.component';
 import { LiveComponent } from './live/live.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AccessmanagementComponent } from './access-management/accessmanagement.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   imports: [
     CommonModule,
+    MatTableModule,
     RouterModule.forChild(ComponentsRoutes)
   ],
   declarations: [

@@ -701,11 +701,11 @@
 }
 .ti-more:before {
 	content: "\e6e1";
-	color: #383838;
+	color: white;
 }
 .ti-more-alt:before {
 	content: "\e6e2";
-	color: #383838;
+	color: white;
 }
 .ti-microphone-alt:before {
 	content: "\e6e3";
