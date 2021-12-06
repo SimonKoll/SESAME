@@ -91,6 +91,7 @@
         width: 15vw;
         height: auto;
         aspect-ratio: 1;
+        
     }
 
     #yellowLight, #greenLight {
@@ -131,6 +132,7 @@
         width: 7vw;
         height: auto;
         aspect-ratio: 1;
+        border-radius: 20%;
     }
 
     #yellowLight, #greenLight {

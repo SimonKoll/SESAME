@@ -12,6 +12,7 @@
   background-clip: border-box;
   border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
+  box-shadow: rgba(113, 80, 80, 0.115) 0px 5px 15px;
 
   > hr {
     margin-right: 0;
