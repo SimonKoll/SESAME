@@ -6,7 +6,7 @@
     #trafficLights{
         display: flex;
         align-items: center;
-        justify-content: center 
+        justify-content: center;
     }
 
     .trafficLight {
@@ -125,17 +125,26 @@
         align-items: center;
         justify-content: center;
         height: 15vh;
-        
+    }
+
+    .trafficStatus {
+        text-align: center;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        text-align: center;
     }
 
     .trafficLight {
-        width: 7vw;
+        width: 6.5vw;
         height: auto;
         aspect-ratio: 1;
-        border-radius: 20%;
+        border-radius: 16px;
+        /* border-radius: 50%; */
+        /* border-radius: 20%; */
     }
 
-    #yellowLight, #greenLight {
-        margin-left: 2.5vw;
+    h4 {
+        margin-top: 1vh;
     }
+
 }
