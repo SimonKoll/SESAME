@@ -138,7 +138,7 @@
         width: 6.5vw;
         height: auto;
         aspect-ratio: 1;
-        border-radius: 16px;
+        border-radius: 50%;
         /* border-radius: 50%; */
         /* border-radius: 20%; */
     }
@@ -146,5 +146,27 @@
     h4 {
         margin-top: 1vh;
     }
+
+    /* Status: Closed */
+    
+    #yellowLight, #greenLight, #yTxt, #gTxt {
+        opacity: 25%;
+    }
+    
+
+    /* Status: Working */
+    /*
+    #redLight, #greenLight, #rTxt, #gTxt {
+        opacity: 25%;
+    }
+    */
+
+    /* Status: Open */
+    /*
+    #redLight, #yellowLight, #rTxt, #yTxt {
+        opacity: 25%;
+    }
+    */
+
 
 }
