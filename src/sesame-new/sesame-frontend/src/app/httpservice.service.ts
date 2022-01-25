@@ -7,7 +7,7 @@ import { Entrant } from './entrant.model';
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
-const apiUrl = 'http://localhost:3000/api/';
+const apiUrl = 'http://localhost:3000';
 
 @Injectable({
   providedIn: 'root'
@@ -23,13 +23,10 @@ export class HttpserviceService {
     };
   }
 
-  getEntrants(): Observable<Entrant[]> {
-    return this.http.get<Entrant[]>(`${apiUrl}`)
-      .pipe(
-        tap(sales => console.log('fetched entrants')),
-        catchError(this.handleError('getEntrants', []))
-      );
-  }
+
+  getEntrants(): Observable<Entrant[]>  {
+    return this.http.get<Entrant[]>(`${apiUrl}/get-entrant`);
+}
 
   getEntrantById(id: string): Observable<Entrant> {
     const url = `${apiUrl}/${id}`;

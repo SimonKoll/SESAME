@@ -1,40 +1,35 @@
-import io from 'socket.io-client';
-import { Component, OnInit } from '@angular/core';
-import { MatTableDataSource } from '@angular/material/table';
-import entries from '../../../../assets/entries.json';
-import { MatTableModule } from '@angular/material/table';
-import { Entrant } from 'src/app/entrant.model';
+import { Component, OnInit } from "@angular/core";
+import { MatTableDataSource } from "@angular/material/table";
+import entries from "../../../../assets/entries.json";
+import { MatTableModule } from "@angular/material/table";
+import { Entrant } from "src/app/entrant.model";
+import { HttpserviceService } from "src/app/httpservice.service";
+import { Observable } from "rxjs";
 
 @Component({
-  selector: 'entries-list',
-  templateUrl: './entries-list.component.html',
-  styleUrls: ['./entries-list.component.css']
+  selector: "entries-list",
+  templateUrl: "./entries-list.component.html",
+  styleUrls: ["./entries-list.component.css"],
 })
-
 export class EntriesListComponent implements OnInit {
-  socket = io('http://localhost:4000');
-  
-  displayedColumns: string[] = ['Name', 'Time'];
-  entryList: {name: String; time: String }[] = entries['recognized-entries'];
-  entryDataSource = new MatTableDataSource(this.entryList.slice(0, 5));
+  displayedColumns: string[] = ["Name", "Time"];
+  entryList: Entrant[] = [];
   entrant: string | undefined;
-  entryListEdited: { name: String; time: String; } | undefined;
+  entryDataSource!: MatTableDataSource<Entrant>;
+  entryListEdited: { name: String; time: String } | undefined;
 
-  constructor(private api: ApiService) { }
+  constructor(private httpservice: HttpserviceService) {}
 
   ngOnInit(): void {
+    this.loadCustomers();
   }
 
-  getEntrants() {
-    this.api.getSales()
-    .subscribe((res: any) => {
-      this.data = res;
-      console.log(this.data);
-      this.isLoadingResults = false;
-    }, err => {
-      console.log(err);
-      this.isLoadingResults = false;
+  loadCustomers() {
+    this.httpservice.getEntrants().subscribe((data: Entrant[]) => {
+      this.entryList = data;
+      console.log("entrylist:" + this.entryList);
+      this.entryDataSource = new MatTableDataSource(this.entryList)
+      console.log(this.entryDataSource)
     });
   }
-
 }
