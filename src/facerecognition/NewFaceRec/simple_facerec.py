@@ -5,7 +5,7 @@ import glob
 import numpy as np
 from datetime import datetime
 import time
-
+from pymongo import MongoClient
 class SimpleFacerec:
     def __init__(self):
         self.known_face_encodings = []
@@ -15,6 +15,10 @@ class SimpleFacerec:
         self.countUnknown = 0
         self.countKnown = 0
         self.path = '/home/pi/Desktop/NewFaceRec/Snapshots'
+        self.client = MongoClient("mongodb+srv://sesame:sesame2021@cluster0.5zncd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+        self.db = self.client["sesame"]
+        self.collection = self.db["entrants"]
+
 
 
     def load_encoding_images(self, images_path):
@@ -77,7 +81,11 @@ class SimpleFacerec:
                 print("wrong count")
                 print(self.countKnown)
                 if(self.countKnown > 5):
-                    
+                    now = datetime.now()
+                    dt_string = now.strftime("%d.%m.%Y / %H:%M")
+                    entrant = {"name": name, "time": dt_string}
+                    x = self.collection.insert_one(entrant)
+                    print(x.inserted_id)
                     os.system('python Trafficlight/greenlight.py')
                     os.system('python Motor/motorClockwise.py')
                     time.sleep(10)
