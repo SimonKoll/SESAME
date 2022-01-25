@@ -1,6 +1,6 @@
 <!-- Project Logo -->
 # SESAME
-**ITP - Projekt | 4BHITM 2020/2021 & 5BHITM 2021/2022**<br>
+**ITP - Projekt | 5BHITM 2020/2021 & 5BHITM 2021/2022**<br>
 **Projekt-Team:** Koll Simon, Golic Benjamin
 <br>
 
@@ -20,3 +20,4 @@ Die Nachfrage für Türsysteme mit Überwachung wird immer größer. Die Sicherh
 * [OpenCV](https://opencv.org)
 * [Keycloak](https://www.keycloak.org)
 * [Oracle-Cloud-VM](https://www.oracle.com/cloud/compute/virtual-machines/)
+* [LeoCloud](https://cloud.htl-leonding.ac.at/)
