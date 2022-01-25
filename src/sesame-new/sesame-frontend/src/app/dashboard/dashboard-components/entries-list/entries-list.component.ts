@@ -28,7 +28,7 @@ export class EntriesListComponent implements OnInit {
     this.httpservice.getEntrants().subscribe((data: Entrant[]) => {
       this.entryList = data;
       console.log("entrylist:" + this.entryList);
-      this.entryDataSource = new MatTableDataSource(this.entryList)
+      this.entryDataSource = new MatTableDataSource(this.entryList.splice(0,5))
       console.log(this.entryDataSource)
     });
   }

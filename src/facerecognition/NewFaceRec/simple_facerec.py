@@ -77,6 +77,7 @@ class SimpleFacerec:
                 print("wrong count")
                 print(self.countKnown)
                 if(self.countKnown > 5):
+                    
                     os.system('python Trafficlight/greenlight.py')
                     os.system('python Motor/motorClockwise.py')
                     time.sleep(10)
