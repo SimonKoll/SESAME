@@ -1,5 +1,5 @@
 import cv2
-from simple_facerec import SimpleFacerec
+from face_rec_with_db import SimpleFacerec
 import os
 
 # Encode faces from a folder
