@@ -1,6 +1,6 @@
 <!-- Project Logo -->
 # SESAME
-**ITP - Projekt | 5BHITM 2020/2021 & 5BHITM 2021/2022**<br>
+**ITP - Projekt | 5BHITM 2021/2022 & 4BHITM 2020/2021**<br>
 **Projekt-Team:** Koll Simon, Golic Benjamin
 <br>
 
