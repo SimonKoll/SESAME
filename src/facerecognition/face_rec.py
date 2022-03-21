@@ -5,22 +5,20 @@ import imutils
 import pickle
 import time
 import cv2
-from gpiozero import Button, RGBLED, Buzzer
 from colorzero import Color
-import json
 from datetime import datetime
 from datetime import date
-import writeJSON as wJSON
 import snap as snap
 from stopStream import pressQToStop
 #import snapshot as takeSnaps
 #import snapshot1 as snaps
 import os
 from time import sleep
-import threading
+from datetime import datetime
 import RPi.GPIO as GPIO
 
-buzzer = Buzzer(16)
+from pymongo import MongoClient
+
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
@@ -31,23 +29,10 @@ GPIO.setup(24, GPIO.OUT)  # yellow
 global thres
 thres = 0
 
-class myThread(threading.Thread):
-    def __init__(self, id):
-        threading.Thread.__init__(self)
-        self.id = id
-
-    def run(self):
-        t1.buzz()
-
-    def buzz(self):
-        for i in range(3):
-            buzzer.on()
-            sleep(1)
-            buzzer.off()
-            sleep(1)
-
-t1 = myThread(1)
-
+path = '/home/pi/Desktop/NewFaceRec/Snapshots'
+client = MongoClient("mongodb+srv://sesame:sesame2021@cluster0.5zncd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+db = client["entrants"]
+collection = db["entrants"]
 currentname = "unknown"
 encodingsP = "encodings.pickle"
 cascade = "haarcascade_frontalface_default.xml"
@@ -97,7 +82,6 @@ while True:
             for i in matchedIdxs:
                 name = data["names"][i]
                 counts[name] = counts.get(name, 0) + 1
-                led.color = Color(0,128,0)
 
             name = max(counts, key=counts.get)
 
@@ -105,15 +89,27 @@ while True:
                 currentname = name
                 print(currentname)
                 names.append(name)
-                t1.start()
-                wJSON.writeEntriesToJson(currentname)
                 GPIO.output(23, False)
                 GPIO.output(24, False)
                 GPIO.output(25, True)
+                now = datetime.now()
+                dt_string = now.strftime("%d.%m.%Y / %H:%M")
+                entrant = {"name": name, "time": dt_string}
+                x = collection.insert_one(entrant)
+                print(x.inserted_id)
+                os.system('python Motor/motorClockwise.py')
+                time.sleep(10)
+                os.system('python Motor/motorCounterClockwise.py')
+                    # activate motor
         names.append(name)
         if thres > 10:
             print("TAKE SCREENSHOT --- Thres")
             snap.takeScreen(vs)
+            now = datetime.now()
+            dt_string = now.strftime("%d.%m.%Y / %H:%M")
+            entrant = {"name": "UNKNOWN", "time": dt_string}
+            x = collection.insert_one(entrant)
+            print(x.inserted_id)
             pressQToStop()
             print(thres)
             thres = 0

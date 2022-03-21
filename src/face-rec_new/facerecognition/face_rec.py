@@ -6,28 +6,34 @@ import pickle
 import time
 import cv2
 from colorzero import Color
-import json
 from datetime import datetime
 from datetime import date
-import writeJSON as wJSON
 import snap as snap
 from stopStream import pressQToStop
 #import snapshot as takeSnaps
 #import snapshot1 as snaps
 import os
 from time import sleep
-import threading
+from datetime import datetime
 import RPi.GPIO as GPIO
 
+from pymongo import MongoClient
+
+
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(25, GPIO.OUT)  # green
+GPIO.setup(23, GPIO.OUT)  # red
+GPIO.setup(24, GPIO.OUT)  # yellow
 
 global thres
 thres = 0
 
-class myThread(threading.Thread):
-    def __init__(self, id):
-        threading.Thread.__init__(self)
-        self.id = id
-
+path = '/home/pi/Desktop/NewFaceRec/Snapshots'
+client = MongoClient(
+    "mongodb+srv://sesame:sesame2021@cluster0.5zncd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+db = client["entrants"]
+collection = db["entrants"]
 currentname = "unknown"
 encodingsP = "encodings.pickle"
 cascade = "haarcascade_frontalface_default.xml"
@@ -42,6 +48,9 @@ time.sleep(2.0)
 
 fps = FPS().start()
 while True:
+    GPIO.output(23, False)
+    GPIO.output(24, True)
+    GPIO.output(25, False)
     frame = vs.read()
     frame = imutils.resize(frame, width=600)
 
@@ -61,6 +70,9 @@ while True:
         matches = face_recognition.compare_faces(data["encodings"],
                                                  encoding)
         name = "Unknown"
+        GPIO.output(23, True)
+        GPIO.output(24, False)
+        GPIO.output(25, False)
         thres += 1
         print(thres)
 
@@ -78,16 +90,30 @@ while True:
                 currentname = name
                 print(currentname)
                 names.append(name)
-                wJSON.writeEntriesToJson(currentname)
-
+                GPIO.output(23, False)
+                GPIO.output(24, False)
+                GPIO.output(25, True)
+                now = datetime.now()
+                dt_string = now.strftime("%d.%m.%Y / %H:%M")
+                entrant = {"name": name, "time": dt_string}
+                x = collection.insert_one(entrant)
+                print(x.inserted_id)
+                os.system('python Motor/motorClockwise.py')
+                time.sleep(10)
+                os.system('python Motor/motorCounterClockwise.py')
+                # activate motor
         names.append(name)
         if thres > 10:
             print("TAKE SCREENSHOT --- Thres")
             snap.takeScreen(vs)
+            now = datetime.now()
+            dt_string = now.strftime("%d.%m.%Y / %H:%M")
+            entrant = {"name": "UNKNOWN", "time": dt_string}
+            x = collection.insert_one(entrant)
+            print(x.inserted_id)
             pressQToStop()
             print(thres)
             thres = 0
-
 
     for ((top, right, bottom, left), name) in zip(boxes, names):
         cv2.rectangle(frame, (left, top), (right, bottom),
@@ -110,3 +136,5 @@ print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
 
 cv2.destroyAllWindows()
 vs.stop()
+
+os.system("python3 distance.py")
