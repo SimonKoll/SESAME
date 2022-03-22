@@ -3,7 +3,7 @@ import time
 
 servoPIN = 17  # der Servomotor wurde an den GPIO Pin 18 angeschlossen
 # moegliche Servopositionen fuer dieses Beispiel
-servoPositions = [2, 5,10]
+servoPositions = [10,5]
 
 # Funktion zum setzen eines Winkels
 # als Parameter wird die Position erwartet
