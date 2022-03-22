@@ -22,9 +22,12 @@ from pymongo import MongoClient
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(25, GPIO.OUT)  # green
-GPIO.setup(23, GPIO.OUT)  # red
-GPIO.setup(24, GPIO.OUT)  # yellow
+redGPIO = 16
+yellowGPIO = 20
+greenGPIO = 21
+GPIO.setup(greenGPIO, GPIO.OUT)  # green
+GPIO.setup(redGPIO, GPIO.OUT)  # red
+GPIO.setup(yellowGPIO, GPIO.OUT)  # yellow
 
 global thres
 thres = 0
@@ -49,9 +52,9 @@ running = True
 
 fps = FPS().start()
 while running:
-    GPIO.output(23, False)
-    GPIO.output(24, True)
-    GPIO.output(25, False)
+    GPIO.output(redGPIO, False)
+    GPIO.output(yellowGPIO, True)
+    GPIO.output(greenGPIO, False)
     frame = vs.read()
     frame = imutils.resize(frame, width=600)
 
@@ -71,9 +74,9 @@ while running:
         matches = face_recognition.compare_faces(data["encodings"],
                                                  encoding)
         name = "Unknown"
-        GPIO.output(23, True)
-        GPIO.output(24, False)
-        GPIO.output(25, False)
+        GPIO.output(redGPIO, True)
+        GPIO.output(yellowGPIO, False)
+        GPIO.output(greenGPIO, False)
         thres += 1
         print(thres)
 
@@ -91,9 +94,9 @@ while running:
                 currentname = name
                 print(currentname)
                 names.append(name)
-                GPIO.output(23, False)
-                GPIO.output(24, False)
-                GPIO.output(25, True)
+                GPIO.output(redGPIO, False)
+                GPIO.output(yellowGPIO, False)
+                GPIO.output(greenGPIO, True)
                 now = datetime.now()
                 dt_string = now.strftime("%d.%m.%Y / %H:%M")
                 entrant = {"name": name, "time": dt_string}
