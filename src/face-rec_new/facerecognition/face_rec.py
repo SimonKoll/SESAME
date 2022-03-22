@@ -139,7 +139,7 @@ print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
 
 cv2.destroyAllWindows()
 vs.stop()
-vs.stream.stream.release()
+vs.stream.release()
 GPIO.cleanup()
 
 os.system("python3 distance.py")
