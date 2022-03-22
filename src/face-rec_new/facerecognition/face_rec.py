@@ -43,7 +43,7 @@ data = pickle.loads(open(encodingsP, "rb").read())
 detector = cv2.CascadeClassifier(cascade)
 
 print("[INFO] starting video stream...")
-vs = VideoStream(src=0).start()
+vs = VideoStream(src=1).start()
 time.sleep(2.0)
 
 fps = FPS().start()
