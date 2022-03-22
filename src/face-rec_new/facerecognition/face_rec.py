@@ -45,9 +45,10 @@ detector = cv2.CascadeClassifier(cascade)
 print("[INFO] starting video stream...")
 vs = VideoStream(src=1).start()
 time.sleep(2.0)
+running = True
 
 fps = FPS().start()
-while True:
+while running:
     GPIO.output(23, False)
     GPIO.output(24, True)
     GPIO.output(25, False)
@@ -102,6 +103,7 @@ while True:
                 time.sleep(10)
                 os.system('python Motor/motorCounterClockwise.py')
                 # activate motor
+                running = False
         names.append(name)
         if thres > 10:
             print("TAKE SCREENSHOT --- Thres")
@@ -114,6 +116,7 @@ while True:
             pressQToStop()
             print(thres)
             thres = 0
+            running = False
 
     for ((top, right, bottom, left), name) in zip(boxes, names):
         cv2.rectangle(frame, (left, top), (right, bottom),
